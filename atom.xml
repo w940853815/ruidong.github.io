@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ruidong-blogs</title>
+  <icon>https://www.gravatar.com/avatar/456ece92936e0431d3f3091de55ed9d0</icon>
+  <subtitle>知识整理</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://w940853815.github.io/ruidong.github.io/"/>
+  <updated>2018-09-05T08:41:01.419Z</updated>
+  <id>https://w940853815.github.io/ruidong.github.io/</id>
+  
+  <author>
+    <name>王瑞东</name>
+    <email>940853815@qq.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git ssh key 设置</title>
+    <link href="https://w940853815.github.io/ruidong.github.io/2018/09/05/git-ssh-key-%E8%AE%BE%E7%BD%AE/"/>
+    <id>https://w940853815.github.io/ruidong.github.io/2018/09/05/git-ssh-key-设置/</id>
+    <published>2018-09-05T08:48:44.000Z</published>
+    <updated>2018-09-05T08:41:01.419Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;git-ssh-key-设置&quot;&gt;&lt;a href=&quot;#git-ssh-key-设置&quot; class=&quot;headerlink&quot; title=&quot;git ssh key 设置&quot;&gt;&lt;/a&gt;git ssh key 设置&lt;/h1&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://w940853815.github.io/ruidong.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://w940853815.github.io/ruidong.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ubuntu server 16 wifi连接设置</title>
+    <link href="https://w940853815.github.io/ruidong.github.io/2018/09/05/ubuntu-server-16-wifi%E8%BF%9E%E6%8E%A5%E8%AE%BE%E7%BD%AE/"/>
+    <id>https://w940853815.github.io/ruidong.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/</id>
+    <published>2018-09-05T08:47:44.000Z</published>
+    <updated>2018-09-05T08:42:45.041Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;ubuntu-server-16-wifi连接设置&quot;&gt;&lt;a href=&quot;#ubuntu-server-16-wifi连接设置&quot; class=&quot;headerlink&quot; title=&quot;ubuntu server 16 wifi连接设置&quot;&gt;&lt;/a&gt;ubuntu
+        
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://w940853815.github.io/ruidong.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://w940853815.github.io/ruidong.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ubuntu设置root密码，可ssh登陆</title>
+    <link href="https://w940853815.github.io/ruidong.github.io/2018/09/05/ubuntu%E8%AE%BE%E7%BD%AEroot%E5%AF%86%E7%A0%81%EF%BC%8C%E5%8F%AFssh%E7%99%BB%E5%BD%95/"/>
+    <id>https://w940853815.github.io/ruidong.github.io/2018/09/05/ubuntu设置root密码，可ssh登录/</id>
+    <published>2018-09-05T08:47:44.000Z</published>
+    <updated>2018-09-05T08:48:08.277Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1 添加root用户密码&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://w940853815.github.io/ruidong.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://w940853815.github.io/ruidong.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>爬取不同分辨率下的不同地图图片数据</title>
+    <link href="https://w940853815.github.io/ruidong.github.io/2018/09/05/%E7%88%AC%E5%8F%96%E4%B8%8D%E5%90%8C%E5%88%86%E8%BE%A8%E7%8E%87%E4%B8%8B%E7%9A%84%E4%B8%8D%E5%90%8C%E5%9C%B0%E5%9B%BE%E5%9B%BE%E7%89%87%E6%95%B0%E6%8D%AE/"/>
+    <id>https://w940853815.github.io/ruidong.github.io/2018/09/05/爬取不同分辨率下的不同地图图片数据/</id>
+    <published>2018-09-05T08:47:44.000Z</published>
+    <updated>2018-09-05T08:44:38.678Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;爬取不同分辨率下的不同地图图片数据&quot;&gt;&lt;a href=&quot;#爬取不同分辨率下的不同地图图片数据&quot; class=&quot;headerlink&quot; title=&quot;爬取不同分辨率下的不同地图图片数据&quot;&gt;&lt;/a&gt;爬取不同分辨率下的不同地图图片数据&lt;/h1&gt;&lt;figure
+        
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://w940853815.github.io/ruidong.github.io/categories/python/"/>
+    
+    
+      <category term="爬虫" scheme="https://w940853815.github.io/ruidong.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="python" scheme="https://w940853815.github.io/ruidong.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>postgresql数据的导入和导出</title>
+    <link href="https://w940853815.github.io/ruidong.github.io/2018/09/05/postsql%E6%95%B0%E6%8D%AE%E7%9A%84%E5%AF%BC%E5%85%A5%E5%92%8C%E5%AF%BC%E5%87%BA/"/>
+    <id>https://w940853815.github.io/ruidong.github.io/2018/09/05/postsql数据的导入和导出/</id>
+    <published>2018-09-05T08:47:44.000Z</published>
+    <updated>2018-09-05T08:44:28.322Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;数据导出&quot;&gt;&lt;a href=&quot;#数据导出&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="数据库" scheme="https://w940853815.github.io/ruidong.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="数据库" scheme="https://w940853815.github.io/ruidong.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>seafile磁盘空间满了解决办法</title>
+    <link href="https://w940853815.github.io/ruidong.github.io/2018/09/05/seafile%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4%E6%BB%A1%E4%BA%86%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>https://w940853815.github.io/ruidong.github.io/2018/09/05/seafile磁盘空间满了解决办法/</id>
+    <published>2018-09-05T08:47:44.000Z</published>
+    <updated>2018-09-05T08:58:00.460Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;seafile磁盘空间满了解决办法&quot;&gt;&lt;a href=&quot;#seafile磁盘空间满了解决办法&quot; class=&quot;headerlink&quot; title=&quot;seafile磁盘空间满了解决办法&quot;&gt;&lt;/a&gt;seafile磁盘空间满了解决办法&lt;/h1&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://w940853815.github.io/ruidong.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://w940853815.github.io/ruidong.github.io/tags/linux/"/>
+    
+      <category term="seafile" scheme="https://w940853815.github.io/ruidong.github.io/tags/seafile/"/>
+    
+  </entry>
+  
+</feed>

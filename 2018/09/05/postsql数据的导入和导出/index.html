@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>postgresql数据的导入和导出 | ruidong-blogs | 知识整理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="数据库">
+    <meta name="description" content="数据导出PostgreSql在windows安装路径/bin目录下自带Pg_dump.exe执行程序 执行过程：  打开windows下的命令窗口：开始-&amp;gt;cmd-&amp;gt;安装数据库的目录-&amp;gt;进入bin目录；  导出命令： 1pg_dump –h localhost –U db_username –p 5432 –d db_name –f “D:/test.dmp”   参数列表123">
+<meta name="keywords" content="数据库">
+<meta property="og:type" content="article">
+<meta property="og:title" content="postgresql数据的导入和导出">
+<meta property="og:url" content="https://w940853815.github.io/ruidong.github.io/2018/09/05/postsql数据的导入和导出/index.html">
+<meta property="og:site_name" content="ruidong-blogs">
+<meta property="og:description" content="数据导出PostgreSql在windows安装路径/bin目录下自带Pg_dump.exe执行程序 执行过程：  打开windows下的命令窗口：开始-&amp;gt;cmd-&amp;gt;安装数据库的目录-&amp;gt;进入bin目录；  导出命令： 1pg_dump –h localhost –U db_username –p 5432 –d db_name –f “D:/test.dmp”   参数列表123">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-09-05T08:44:28.322Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="postgresql数据的导入和导出">
+<meta name="twitter:description" content="数据导出PostgreSql在windows安装路径/bin目录下自带Pg_dump.exe执行程序 执行过程：  打开windows下的命令窗口：开始-&amp;gt;cmd-&amp;gt;安装数据库的目录-&amp;gt;进入bin目录；  导出命令： 1pg_dump –h localhost –U db_username –p 5432 –d db_name –f “D:/test.dmp”   参数列表123">
+    
+        <link rel="alternate" type="application/atom+xml" title="ruidong-blogs" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">王瑞东</h5>
+          <a href="mailto:940853815@qq.com" title="940853815@qq.com" class="mail">940853815@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/w940853815" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://weibo.com/u/2187914081" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">postgresql数据的导入和导出</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">postgresql数据的导入和导出</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-09-05T08:47:44.000Z" itemprop="datePublished" class="page-time">
+  2018-09-05
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/数据库/">数据库</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数据导出"><span class="post-toc-number">1.</span> <span class="post-toc-text">数据导出</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#导入数据"><span class="post-toc-number">2.</span> <span class="post-toc-text">导入数据</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#这边的-d后面的数据库名称即是需要导入的数据库。同样需要输入数据库密码。并且-d-后面数据库必须为已经存在的数据库"><span class="post-toc-number"></span> <span class="post-toc-text">这边的-d后面的数据库名称即是需要导入的数据库。同样需要输入数据库密码。并且-d 后面数据库必须为已经存在的数据库</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#补充"><span class="post-toc-number">1.</span> <span class="post-toc-text">补充</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-postsql数据的导入和导出"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">postgresql数据的导入和导出</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-09-05 16:47:44" datetime="2018-09-05T08:47:44.000Z"  itemprop="datePublished">2018-09-05</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/数据库/">数据库</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h3 id="数据导出"><a href="#数据导出" class="headerlink" title="数据导出"></a>数据导出</h3><p>PostgreSql在windows安装路径/bin目录下自带Pg_dump.exe执行程序</p>
+<p>执行过程：</p>
+<ol>
+<li><p>打开windows下的命令窗口：开始-&gt;cmd-&gt;安装数据库的目录-&gt;进入bin目录；</p>
+</li>
+<li><p>导出命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pg_dump –h localhost –U db_username –p 5432 –d db_name –f “D:/test.dmp”</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>参数列表<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">-h：服务器地址；</span><br><span class="line">-p：端口号；</span><br><span class="line">-U：这里的“U”要大写；</span><br><span class="line">-d：数据库名称；</span><br><span class="line">-f：文件输出的目录和名称；</span><br><span class="line">可选参数</span><br><span class="line">-s, --schema-only       只转储模式,不包括数据（导出表结构）</span><br></pre></td></tr></table></figure></p>
+<p>按回车执行，会让输入口令（即数据库用户密码），输入即可，以上命令是输出数据库的全部对象，包含数据，对象(index，table，sequence，function等),但是不包含blob的大对象，如果需要导出大对象那么需要加上“-b”；</p>
+<h3 id="导入数据"><a href="#导入数据" class="headerlink" title="导入数据"></a>导入数据</h3><p>恢复数据：因为导出的是明文数据文件，一次使用psql命令，如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">psql -h localhost -U db_username -d db_name  -f &quot;D:\test.dmp&quot;</span><br></pre></td></tr></table></figure></p>
+<h2 id="这边的-d后面的数据库名称即是需要导入的数据库。同样需要输入数据库密码。并且-d-后面数据库必须为已经存在的数据库"><a href="#这边的-d后面的数据库名称即是需要导入的数据库。同样需要输入数据库密码。并且-d-后面数据库必须为已经存在的数据库" class="headerlink" title="这边的-d后面的数据库名称即是需要导入的数据库。同样需要输入数据库密码。并且-d 后面数据库必须为已经存在的数据库"></a>这边的-d后面的数据库名称即是需要导入的数据库。同样需要输入数据库密码。并且-d 后面数据库必须为已经存在的数据库</h2><h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><ol>
+<li>导出数据库：<br>方式一：pg_dump  -U  postgres  -f  c:\db.sql postgis<br>方式二：pg_dump  -U postgres  postgis &gt; c:\db.sql</li>
+<li>导入数据库：<br>方式一：psql  -d  postgis  -f  c:\db.sql  postgres</li>
+<li>导出具体表：<br>方式一：pg_dump -Upostgres -t mytable -f  dump.sql  postgres</li>
+<li>导入具体表：<br>方式一：psql  -d  postgis  -f  c:\ dump.sql postgres</li>
+</ol>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2018-09-05T08:44:28.322Z" itemprop="dateUpdated">2018-09-05 16:44:28</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/09/05/postsql数据的导入和导出/" target="_blank" rel="external">https://w940853815.github.io/ruidong.github.io/2018/09/05/postsql数据的导入和导出/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://w940853815.github.io/ruidong.github.io">
+            <img src="/img/avatar.jpg" alt="王瑞东">
+            王瑞东
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据库/">数据库</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://w940853815.github.io/ruidong.github.io/2018/09/05/postsql数据的导入和导出/&title=《postgresql数据的导入和导出》 — ruidong-blogs&pic=https://w940853815.github.io/ruidong.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://w940853815.github.io/ruidong.github.io/2018/09/05/postsql数据的导入和导出/&title=《postgresql数据的导入和导出》 — ruidong-blogs&source=知识整理" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://w940853815.github.io/ruidong.github.io/2018/09/05/postsql数据的导入和导出/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《postgresql数据的导入和导出》 — ruidong-blogs&url=https://w940853815.github.io/ruidong.github.io/2018/09/05/postsql数据的导入和导出/&via=https://w940853815.github.io/ruidong.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://w940853815.github.io/ruidong.github.io/2018/09/05/postsql数据的导入和导出/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2018/09/05/爬取不同分辨率下的不同地图图片数据/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">爬取不同分辨率下的不同地图图片数据</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2018/09/05/seafile磁盘空间满了解决办法/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">seafile磁盘空间满了解决办法</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        非常谢谢~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>王瑞东 &copy; 2015 - 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://w940853815.github.io/ruidong.github.io/2018/09/05/postsql数据的导入和导出/&title=《postgresql数据的导入和导出》 — ruidong-blogs&pic=https://w940853815.github.io/ruidong.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://w940853815.github.io/ruidong.github.io/2018/09/05/postsql数据的导入和导出/&title=《postgresql数据的导入和导出》 — ruidong-blogs&source=知识整理" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://w940853815.github.io/ruidong.github.io/2018/09/05/postsql数据的导入和导出/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《postgresql数据的导入和导出》 — ruidong-blogs&url=https://w940853815.github.io/ruidong.github.io/2018/09/05/postsql数据的导入和导出/&via=https://w940853815.github.io/ruidong.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://w940853815.github.io/ruidong.github.io/2018/09/05/postsql数据的导入和导出/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADMklEQVR42u3aQY7CMBAEwP3/p9krqxWhe5xIxFROCIXgModhpv3zE1+Pp+v/O6+u5zv/Py158quVJHeecGFjY2PfhN0u/fjOY2q7Ne0GJRZsbGzsXdl5qTi+vwXnP0CynsSCjY2NjZ1QZ21DXjKPCxg2NjY2drKIlYFUPudpNx0bGxv7m9n5X/8VWLLdsybnwlkaNjY29sez2yV+8utL8m1sbGzsD2Y/Fq6VpawD2sNDf1aOjY2NvRG7LRLHR3POjWbbFqgOD7CxsbE3ZSdFpR3T5BvRBgNLgTQ2Njb2FuzjAfpKYcuD2LzVyQvhm+3DxsbG3o7dFqr2y2bDo2Rt+XqwsbGxv429UnhWxv2zranXgI2Njb0deyXcnZW6K6jHjQo2Njb2ruzk7/tsifngqV5uGVS8vAcbGxt7I/ZZxWz2Oj/0s9JEvfnNsbGxsW/LXjki07YNswC4GPrnwyZsbGzsrdntV86KX3G8ZhQhF+0HNjY29hbsfHwzw6+MmWZToDfPwcbGxt6IncPyhyaNwWxb27i3mKVhY2Njb8FuA9Q8rM1HV+vHOutUBBsbG/vm7HZMnweu7aGcPEJof5I3mTY2Njb2zdmzozZ5tJAsoi1ms3YFGxsb+3vYs2YgP76zXiZXRlfY2NjY+7HzYzHt2KhdbjIqOm2whY2Njb0RO3n0ShnLj10eb9x6wFDPnLCxsbFvxc67lnYklA+h2kNCs2DjzzvY2NjYW7BnrUJehGaHftopUL592NjY2Puxjx+aD4Dycf/syE47eIq2HhsbG3sLdlsMZvHwbNy/fpDo5Z3Y2NjYG7FnB2KuHhuthAdLES82Njb2DdlXfOW5AfDKcOrlc7CxsbE3YueTp3xxSZFrA4lZtFzUbWxsbOzbsh/l1Y74V4LYJFRuIw1sbGzs/dizP/ftn/42MF4pgSsNDDY2NvZ92VcUrTzKnTUVJxQwbGxs7O3Y7aGZHHy8xHYrZ5v1Jh7AxsbG/hr2DJB8Kopm46Yo+qmwsbGxv5J9Vjzcvr4kGMDGxsbejt1+QV541ktd0urUn8XGxsbeiN2OZtqS0zYnbYSQl89hvo2NjY39uexfb8SM4Fca3wQAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '加载中.';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '加载完毕.';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

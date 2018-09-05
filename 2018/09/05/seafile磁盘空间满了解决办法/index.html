@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>seafile磁盘空间满了解决办法 | ruidong-blogs | 知识整理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="linux,seafile">
+    <meta name="description" content="seafile磁盘空间满了解决办法磁盘扩容（虚拟机）参考：http://www.linuxidc.com/Linux/2012-07/65646.htm  物理机添加一块新的硬盘，原理相同  1fdisk -l :打印当前的磁盘分区表,可以看到新的磁盘加了进来  分区  1234fdisk /dev/sda   “sda就是经过扩容的硬盘，为SCSI硬盘，IDE类型硬盘对应为hda，是对该硬盘进行">
+<meta name="keywords" content="linux,seafile">
+<meta property="og:type" content="article">
+<meta property="og:title" content="seafile磁盘空间满了解决办法">
+<meta property="og:url" content="https://w940853815.github.io/ruidong.github.io/2018/09/05/seafile磁盘空间满了解决办法/index.html">
+<meta property="og:site_name" content="ruidong-blogs">
+<meta property="og:description" content="seafile磁盘空间满了解决办法磁盘扩容（虚拟机）参考：http://www.linuxidc.com/Linux/2012-07/65646.htm  物理机添加一块新的硬盘，原理相同  1fdisk -l :打印当前的磁盘分区表,可以看到新的磁盘加了进来  分区  1234fdisk /dev/sda   “sda就是经过扩容的硬盘，为SCSI硬盘，IDE类型硬盘对应为hda，是对该硬盘进行">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-09-05T08:58:00.460Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="seafile磁盘空间满了解决办法">
+<meta name="twitter:description" content="seafile磁盘空间满了解决办法磁盘扩容（虚拟机）参考：http://www.linuxidc.com/Linux/2012-07/65646.htm  物理机添加一块新的硬盘，原理相同  1fdisk -l :打印当前的磁盘分区表,可以看到新的磁盘加了进来  分区  1234fdisk /dev/sda   “sda就是经过扩容的硬盘，为SCSI硬盘，IDE类型硬盘对应为hda，是对该硬盘进行">
+    
+        <link rel="alternate" type="application/atom+xml" title="ruidong-blogs" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">王瑞东</h5>
+          <a href="mailto:940853815@qq.com" title="940853815@qq.com" class="mail">940853815@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/w940853815" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://weibo.com/u/2187914081" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">seafile磁盘空间满了解决办法</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">seafile磁盘空间满了解决办法</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-09-05T08:47:44.000Z" itemprop="datePublished" class="page-time">
+  2018-09-05
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/linux/">linux</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#seafile磁盘空间满了解决办法"><span class="post-toc-number">1.</span> <span class="post-toc-text">seafile磁盘空间满了解决办法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#磁盘扩容（虚拟机）"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">磁盘扩容（虚拟机）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#磁盘挂载"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">磁盘挂载</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#总结"><span class="post-toc-number">2.</span> <span class="post-toc-text">总结</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#服务器上一定要慎用rm命令！！！！！！！"><span class="post-toc-number">3.</span> <span class="post-toc-text">服务器上一定要慎用rm命令！！！！！！！</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-seafile磁盘空间满了解决办法"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">seafile磁盘空间满了解决办法</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-09-05 16:47:44" datetime="2018-09-05T08:47:44.000Z"  itemprop="datePublished">2018-09-05</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/linux/">linux</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="seafile磁盘空间满了解决办法"><a href="#seafile磁盘空间满了解决办法" class="headerlink" title="seafile磁盘空间满了解决办法"></a>seafile磁盘空间满了解决办法</h1><h3 id="磁盘扩容（虚拟机）"><a href="#磁盘扩容（虚拟机）" class="headerlink" title="磁盘扩容（虚拟机）"></a>磁盘扩容（虚拟机）</h3><p>参考：<a href="http://www.linuxidc.com/Linux/2012-07/65646.htm" target="_blank" rel="noopener">http://www.linuxidc.com/Linux/2012-07/65646.htm</a></p>
+<ul>
+<li>物理机添加一块新的硬盘，原理相同</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fdisk -l :打印当前的磁盘分区表,可以看到新的磁盘加了进来</span><br></pre></td></tr></table></figure>
+<ul>
+<li>分区</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fdisk /dev/sda   “sda就是经过扩容的硬盘，为SCSI硬盘，IDE类型硬盘对应为hda，是对该硬盘进行操作</span><br><span class="line">n  &quot; 命令n用于添加新分区&quot;</span><br><span class="line">p  &quot; 选择创建主分区&quot;,然后选择分区编号3,4（主分区）</span><br><span class="line">w  &quot;保存所有并退出，分区划分完毕&quot;</span><br></pre></td></tr></table></figure>
+<hr>
+<ol>
+<li>我们在这里是要添加一个新分区，即将扩容出来的那部分做成一个新分区，这样才能被操作系统挂载识别。</li>
+<li>此时，fdisk会让你选择添加为逻辑分区呢（编号从5开始）还是主分区（编号1到4）。选择主分区吧，则键入p；选择逻辑分区键入l</li>
+<li>此时，fdisk会让你选择主分区的编号，如果已经有了主分区sda1，sda2，那么编号就选3，即要创建的该分区为sda3.键入：3</li>
+<li>此时，fdisk又会让你选择该分区的开始值这个就是分区的Start 值（start cylinder）；这里最好直接按回车，如果您输入了一个非默认的数字，会造成空间浪费</li>
+<li>此时键入：w  “保存所有并退出，分区划分完毕”</li>
+</ol>
+<hr>
+<ul>
+<li>格式化</li>
+</ul>
+<p>格式化该新添加的分区<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkfs -t ext3 /dev/sda3</span><br></pre></td></tr></table></figure></p>
+<h3 id="磁盘挂载"><a href="#磁盘挂载" class="headerlink" title="磁盘挂载"></a>磁盘挂载</h3><p>手动挂载，则键入：mount /dev/sda3 /home/work/         “表示将该新分区挂载到/home/work/这个目录下面”</p>
+<p>开机自动挂载，则修改/etc/fstab文件，在这个文件里面添加一行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/dev/sda4       /seafile-data      ext3    defaults        0       1</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>创建符号链接 参考：<a href="https://bbs.seafile.com/t/seafile/71)(http://www.cnblogs.com/findumars/p/5747904.html)" target="_blank" rel="noopener">https://bbs.seafile.com/t/seafile/71)(http://www.cnblogs.com/findumars/p/5747904.html)</a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cp -r /home/sysadmin/haiwen/seafile-data /seafile-data</span><br><span class="line">#当前目录 /home/sysadmin/haiwen/</span><br><span class="line">ln -s /seafile-data/ ./seafile-data</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><h1 id="服务器上一定要慎用rm命令！！！！！！！"><a href="#服务器上一定要慎用rm命令！！！！！！！" class="headerlink" title="服务器上一定要慎用rm命令！！！！！！！"></a>服务器上一定要慎用rm命令！！！！！！！</h1>
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2018-09-05T08:58:00.460Z" itemprop="dateUpdated">2018-09-05 16:58:00</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/09/05/seafile磁盘空间满了解决办法/" target="_blank" rel="external">https://w940853815.github.io/ruidong.github.io/2018/09/05/seafile磁盘空间满了解决办法/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://w940853815.github.io/ruidong.github.io">
+            <img src="/img/avatar.jpg" alt="王瑞东">
+            王瑞东
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/seafile/">seafile</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://w940853815.github.io/ruidong.github.io/2018/09/05/seafile磁盘空间满了解决办法/&title=《seafile磁盘空间满了解决办法》 — ruidong-blogs&pic=https://w940853815.github.io/ruidong.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://w940853815.github.io/ruidong.github.io/2018/09/05/seafile磁盘空间满了解决办法/&title=《seafile磁盘空间满了解决办法》 — ruidong-blogs&source=知识整理" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://w940853815.github.io/ruidong.github.io/2018/09/05/seafile磁盘空间满了解决办法/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《seafile磁盘空间满了解决办法》 — ruidong-blogs&url=https://w940853815.github.io/ruidong.github.io/2018/09/05/seafile磁盘空间满了解决办法/&via=https://w940853815.github.io/ruidong.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://w940853815.github.io/ruidong.github.io/2018/09/05/seafile磁盘空间满了解决办法/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2018/09/05/postsql数据的导入和导出/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">postgresql数据的导入和导出</h4>
+      </a>
+    </div>
+  
+
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        非常谢谢~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>王瑞东 &copy; 2015 - 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://w940853815.github.io/ruidong.github.io/2018/09/05/seafile磁盘空间满了解决办法/&title=《seafile磁盘空间满了解决办法》 — ruidong-blogs&pic=https://w940853815.github.io/ruidong.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://w940853815.github.io/ruidong.github.io/2018/09/05/seafile磁盘空间满了解决办法/&title=《seafile磁盘空间满了解决办法》 — ruidong-blogs&source=知识整理" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://w940853815.github.io/ruidong.github.io/2018/09/05/seafile磁盘空间满了解决办法/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《seafile磁盘空间满了解决办法》 — ruidong-blogs&url=https://w940853815.github.io/ruidong.github.io/2018/09/05/seafile磁盘空间满了解决办法/&via=https://w940853815.github.io/ruidong.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://w940853815.github.io/ruidong.github.io/2018/09/05/seafile磁盘空间满了解决办法/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADJUlEQVR42u3a0W7qQAwFQP7/p7mvvWoJx3YiETN5QgSSzCLV9fE+HvHx/HEcf+b3519969XZ3+8n13lccWBjY2PfhP08PI4fJb9aDs6px8/5ZumxsbGx17GTgpTfPlmCZCnzz+QWbGxsbOwqsvpYx9+aXx8bGxsbOy8kecOQgyeFFhsbG3s3Oy8MSfSfB0B5S9Nb0BOyNGxsbOyPZ+dT0c9/fcl8GxsbG/uD2c/ikYT4eVGZjJBHCmxsbOxF7LwATEhVXrUsVZ8fGxsbex87Cf0TQLUlSL6VxEOTsQE2Njb2DnZ1iNtrDK4uhOUBBjY2NvYKdm9EetZWnvli5Xf87zU2Njb2F7Dz5qE3cO0t8aS9+WMqgo2Njf017F6Ik5eTauMxWZRyRcXGxsa+IXtC7TUwzQ03rfL5soBhY2Nj35ZdbQ+qQX+vjsxLbD4kxsbGxt7NTs5OYqBoCn1BA4ONjY39beyoDBSHB9WSc0m0hI2Njb2CPYmEeqTk/WrzU21LsLGxsfexe9sly//0nzp7zSOwP85iY2NjL2JXG4leYettr8zvlTctj17/hI2NjX0T9lnxfRVQHs2e9MzY2NjYO9i9zYvVbZRnDYzzFuVNccXGxsZeys5LQm+xJhFVb3Tx8pPY2NjYX8A+joeqEf8cUP1J3vxI2NjY2IvY1X/6z90KecX2oDzAwsbGxt7N7gVGSWyUn60WtmoDg42Njb2DXY3pe7FOtewl0X91zPzHeAAbGxt7Ebs30M1bl16UX22NCiUZGxsbexF7HvRPhrV52cvvkoiwsbGx97HnrcIV23eqYVa5acHGxsZex67+be+Nb6tbOfMmp3oFbGxs7H3sJEiab8HMxwBJ0/IoHtjY2Nj72M/i0Qv95+FR3tJEC4SNjY29iN1rMPKFqJLykW11DNxcAmxsbOybsKtFq7c5Mi9dkxirUMCwsbGx17F7w935aDYZMCQls5CiYWNjY389u7q5J4mW5vjqSBgbGxsbez4SyHm9MvbmmtjY2Njr2L2Hy8OdPDaqBlu97UTY2NjYm9jVUKY6PJgUxd6It9o+YWNjY9+W/Q+QvoaS6iO8/QAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '加载中.';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '加载完毕.';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
