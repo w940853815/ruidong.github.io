@@ -14,25 +14,25 @@
     
     
     
-    <title>git ssh key 设置 | ruidong-blogs | 知识整理</title>
+    <title>hexo搭建本博客 | ruidong-blogs | 知识整理</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="linux">
-    <meta name="description" content="git ssh key 设置设置完成后，git pull,push等命令就不需要再输入用户名和密码了 生成公钥，私钥1ssh-keygen -t rsa -C &amp;quot;邮箱地址&amp;quot;   然后得到两个文件：私钥id_rsa和公钥id_rsa.pub  把公钥里面的内容复制到gitlab，github的ssh keys设置处  测试 1ssh -T git@主机ip   如果看到Hi后面是">
-<meta name="keywords" content="linux">
+    <meta name="keywords" content="hexo">
+    <meta name="description" content="安装(需要node,git)  1npm install -g hexo-cli  阅读hexo官方文档  https://hexo.io/zh-cn/docs/setup  完成建站，配置，熟悉hexo常用命令用法(init,new,generate,server,deploy)   使用主题 https://github.com/yscoder/hexo-theme-indigo  按照文档">
+<meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git ssh key 设置">
-<meta property="og:url" content="https://w940853815.github.io/2018/09/05/git-ssh-key-设置/index.html">
+<meta property="og:title" content="hexo搭建本博客">
+<meta property="og:url" content="https://w940853815.github.io/2018/09/05/hexo博客搭建/index.html">
 <meta property="og:site_name" content="ruidong-blogs">
-<meta property="og:description" content="git ssh key 设置设置完成后，git pull,push等命令就不需要再输入用户名和密码了 生成公钥，私钥1ssh-keygen -t rsa -C &amp;quot;邮箱地址&amp;quot;   然后得到两个文件：私钥id_rsa和公钥id_rsa.pub  把公钥里面的内容复制到gitlab，github的ssh keys设置处  测试 1ssh -T git@主机ip   如果看到Hi后面是">
+<meta property="og:description" content="安装(需要node,git)  1npm install -g hexo-cli  阅读hexo官方文档  https://hexo.io/zh-cn/docs/setup  完成建站，配置，熟悉hexo常用命令用法(init,new,generate,server,deploy)   使用主题 https://github.com/yscoder/hexo-theme-indigo  按照文档">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-05T13:05:02.492Z">
+<meta property="og:updated_time" content="2018-09-05T13:05:33.114Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git ssh key 设置">
-<meta name="twitter:description" content="git ssh key 设置设置完成后，git pull,push等命令就不需要再输入用户名和密码了 生成公钥，私钥1ssh-keygen -t rsa -C &amp;quot;邮箱地址&amp;quot;   然后得到两个文件：私钥id_rsa和公钥id_rsa.pub  把公钥里面的内容复制到gitlab，github的ssh keys设置处  测试 1ssh -T git@主机ip   如果看到Hi后面是">
+<meta name="twitter:title" content="hexo搭建本博客">
+<meta name="twitter:description" content="安装(需要node,git)  1npm install -g hexo-cli  阅读hexo官方文档  https://hexo.io/zh-cn/docs/setup  完成建站，配置，熟悉hexo常用命令用法(init,new,generate,server,deploy)   使用主题 https://github.com/yscoder/hexo-theme-indigo  按照文档">
     
         <link rel="alternate" type="application/atom+xml" title="ruidong-blogs" href="/atom.xml">
     
@@ -120,7 +120,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">git ssh key 设置</div>
+        <div class="flex-col header-title ellipsis">hexo搭建本博客</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -142,15 +142,15 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">git ssh key 设置</h1>
+        <h1 class="title">hexo搭建本博客</h1>
         <h5 class="subtitle">
             
-                <time datetime="2018-09-05T08:48:44.000Z" itemprop="datePublished" class="page-time">
+                <time datetime="2018-09-05T09:25:36.000Z" itemprop="datePublished" class="page-time">
   2018-09-05
 </time>
 
 
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/linux/">linux</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/hexo/">hexo</a></li></ul>
 
             
         </h5>
@@ -164,24 +164,17 @@
 
 <div class="container body-wrap">
     
-    <aside class="post-widget">
-        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
-            <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#git-ssh-key-设置"><span class="post-toc-number">1.</span> <span class="post-toc-text">git ssh key 设置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#设置完成后，git-pull-push等命令就不需要再输入用户名和密码了"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">设置完成后，git pull,push等命令就不需要再输入用户名和密码了</span></a></li></ol></li></ol></li></ol>
-        </nav>
-    </aside>
 
-
-<article id="post-git-ssh-key-设置"
+<article id="post-hexo博客搭建"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">git ssh key 设置</h1>
+        <h1 class="post-card-title">hexo搭建本博客</h1>
         <div class="post-meta">
-            <time class="post-time" title="2018-09-05 16:48:44" datetime="2018-09-05T08:48:44.000Z"  itemprop="datePublished">2018-09-05</time>
+            <time class="post-time" title="2018-09-05 17:25:36" datetime="2018-09-05T09:25:36.000Z"  itemprop="datePublished">2018-09-05</time>
 
             
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/linux/">linux</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/hexo/">hexo</a></li></ul>
 
 
 
@@ -193,25 +186,32 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h1 id="git-ssh-key-设置"><a href="#git-ssh-key-设置" class="headerlink" title="git ssh key 设置"></a>git ssh key 设置</h1><h3 id="设置完成后，git-pull-push等命令就不需要再输入用户名和密码了"><a href="#设置完成后，git-pull-push等命令就不需要再输入用户名和密码了" class="headerlink" title="设置完成后，git pull,push等命令就不需要再输入用户名和密码了"></a>设置完成后，git pull,push等命令就不需要再输入用户名和密码了</h3><ul>
-<li>生成公钥，私钥<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;邮箱地址&quot;</span><br></pre></td></tr></table></figure>
+            <ol>
+<li>安装(需要node,git)</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>阅读hexo官方文档</li>
+</ol>
+<p><a href="https://hexo.io/zh-cn/docs/setup" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/setup</a></p>
+<ol start="3">
+<li>完成建站，配置，熟悉hexo常用命令用法(init,new,generate,server,deploy) </li>
+</ol>
+<p>使用主题</p>
+<p><a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank" rel="noopener">https://github.com/yscoder/hexo-theme-indigo</a></p>
+<ol start="4">
+<li><p>按照文档说明，换成hexo-theme-indigo主题</p>
 </li>
-</ul>
-<p>然后得到两个文件：私钥id_rsa和公钥id_rsa.pub</p>
-<ul>
-<li><p>把公钥里面的内容复制到gitlab，github的ssh keys设置处</p>
+<li><p>修改完配置，主要修改一些个人信息</p>
 </li>
-<li><p>测试</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@主机ip</span><br></pre></td></tr></table></figure>
+<li><p>创建文章</p>
 </li>
-</ul>
-<p>如果看到Hi后面是你的用户名，就说明成功了。</p>
-<ul>
-<li>修改.git文件夹下config中的url</li>
-</ul>
-<p>修改前<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[remote &quot;origin&quot;]</span><br><span class="line">    url = https://github.com/xxxx.git</span><br><span class="line">    fetch = +refs/heads/*:refs/remotes/origin/*</span><br></pre></td></tr></table></figure></p>
-<p>修改后</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[remote &quot;origin&quot;]</span><br><span class="line">   url = git@github.com:xxx.git</span><br><span class="line">   fetch = +refs/heads/*:refs/remotes/origin/*</span><br></pre></td></tr></table></figure>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post 文章标题</span><br></pre></td></tr></table></figure>
+<p>7.</p>
+<ol start="7">
+<li>利用hexo发布到xxxx.github.io(hexo deploy)</li>
+</ol>
 
         </div>
 
@@ -220,12 +220,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-09-05T13:05:02.492Z" itemprop="dateUpdated">2018-09-05 21:05:02</time>
+    最后更新时间：<time datetime="2018-09-05T13:05:33.114Z" itemprop="dateUpdated">2018-09-05 21:05:33</time>
 </span><br>
 
 
         
-        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/09/05/git-ssh-key-设置/" target="_blank" rel="external">https://w940853815.github.io/2018/09/05/git-ssh-key-设置/</a>
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/09/05/hexo博客搭建/" target="_blank" rel="external">https://w940853815.github.io/2018/09/05/hexo博客搭建/</a>
         
     </div>
     
@@ -246,7 +246,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
 
 
             
@@ -256,7 +256,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://w940853815.github.io/2018/09/05/git-ssh-key-设置/&title=《git ssh key 设置》 — ruidong-blogs&pic=https://w940853815.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://w940853815.github.io/2018/09/05/hexo博客搭建/&title=《hexo搭建本博客》 — ruidong-blogs&pic=https://w940853815.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -266,22 +266,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://w940853815.github.io/2018/09/05/git-ssh-key-设置/&title=《git ssh key 设置》 — ruidong-blogs&source=知识整理" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://w940853815.github.io/2018/09/05/hexo博客搭建/&title=《hexo搭建本博客》 — ruidong-blogs&source=知识整理" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://w940853815.github.io/2018/09/05/git-ssh-key-设置/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://w940853815.github.io/2018/09/05/hexo博客搭建/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《git ssh key 设置》 — ruidong-blogs&url=https://w940853815.github.io/2018/09/05/git-ssh-key-设置/&via=https://w940853815.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《hexo搭建本博客》 — ruidong-blogs&url=https://w940853815.github.io/2018/09/05/hexo博客搭建/&via=https://w940853815.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://w940853815.github.io/2018/09/05/git-ssh-key-设置/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://w940853815.github.io/2018/09/05/hexo博客搭建/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -301,21 +301,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/2018/09/05/hexo博客搭建/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">hexo搭建本博客</h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2018/09/05/seafile磁盘空间满了解决办法/" id="post-next" class="post-nav-link">
+      <a href="/2018/09/05/git-ssh-key-设置/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">seafile磁盘空间满了解决办法</h4>
+        <h4 class="title">git ssh key 设置</h4>
       </a>
     </div>
   
@@ -412,7 +405,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://w940853815.github.io/2018/09/05/git-ssh-key-设置/&title=《git ssh key 设置》 — ruidong-blogs&pic=https://w940853815.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://w940853815.github.io/2018/09/05/hexo博客搭建/&title=《hexo搭建本博客》 — ruidong-blogs&pic=https://w940853815.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -422,22 +415,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://w940853815.github.io/2018/09/05/git-ssh-key-设置/&title=《git ssh key 设置》 — ruidong-blogs&source=知识整理" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://w940853815.github.io/2018/09/05/hexo博客搭建/&title=《hexo搭建本博客》 — ruidong-blogs&source=知识整理" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://w940853815.github.io/2018/09/05/git-ssh-key-设置/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://w940853815.github.io/2018/09/05/hexo博客搭建/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《git ssh key 设置》 — ruidong-blogs&url=https://w940853815.github.io/2018/09/05/git-ssh-key-设置/&via=https://w940853815.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《hexo搭建本博客》 — ruidong-blogs&url=https://w940853815.github.io/2018/09/05/hexo博客搭建/&via=https://w940853815.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://w940853815.github.io/2018/09/05/git-ssh-key-设置/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://w940853815.github.io/2018/09/05/hexo博客搭建/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -448,7 +441,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKklEQVR42u3aQXLDIAwF0Nz/0u4BOnH+l0mnxo9Vpk4Nj4UiJF6veBxvxrun796QfP/dGxYMDAyM2zKO09G+OmH8njf5y4fNwsDAeAAjD5F5AD0Ppsl/5ZuCgYGBcZ7G5SGyXToGBgZGy8hJyTE1Tw0xMDAw8oDYJoizUtrXz+IYGBg3ZLRFtL/8/JX+BgYGxq0Yx6JxfqydtRaK2TEwMLZmtEGwvWAxSwqHR1wMDIytGe3rzr8/O3zmT4vEEQMD4zGMpECfF+ZmiWMdajEwMLZjzJoBeUtgFriHGS4GBsZ2jLw0n1/ISBbaBtMPm4KBgfEAxvmr25QuD815OC5+MTAwMLZjzNKyhJSnd3kgXtAMwMDAuCGjnWBWgGsvftVrwMDAeAAjSQTbhK+9bJEkqdEhFgMDY2vGlelXfW4P1a+1u4iBgfGPGdeTs7aslrcikh8ADAyMZzKupIBFoBy1Sz90YjEwMLZjfKPR2CaRyQZFW4mBgbEpY1WhbRask62JmgoYGBhbM9qEry2ctZvVtkUxMDCewJgt68pVjDbti5JIDAyMrRn5lKsue+W8vISHgYGxN+MoR3JMvd6SbOfFwMDYmzELc20gzo+ybcKKgYHxHEZbDptd0biew0aXwzAwMLZmrCqltU+vXDWLJsbAwHgYo71aOksZ24YEBgYGRktatWgMDAyMVXWqWUqXH4OLpikGBsbWjHwReeOzDcR52e7SdQ0MDIz7MX4AT1NlqwRFUmQAAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACPUlEQVR42u3aS3KDMBBFUfa/aTLJwFUO0n0t4wqty4hybKTDoKP+HAe+zrfr9fOr+6u/krWOOy4ZMmQ8lnEOL/Kdq1+NX8HV1vm6MmTI2I1RezQPr+Q1je8ne5YhQ4aM4XGNh2zyZBkyZMj4VMDlySffKE99ZciQsScjDZcraed4c7fn4jJkyHggIy3Wf/P+lv6GDBkyHsWolft5qCXBemU/v8+RIUNGawYPcKS1yb/Jn0b2I0OGjN0YZGEyQpEOWPDyHKoaypAhoxGjFkbJVtZJwRFThgwZGzDWD3mTQ1tpqIKnuzJkyOjNSEccxpuoDUl86jXJkCGjN4MX5fkyvG2QBuvJK5YhQ0Y7Rpqajt9ELciSZsCkgSpDhowNGOliZPCi1pLkDctJLi5DhozWjNoYBPl8/aUEYxYyZMjYhkE+ryWivKgX5N8yZMhoyuAbXRnhSo+btVaEDBkyujJqg1810nrR7XJFGTJkbMBI2wO1AllQPgOv9Y+AK0OGjKYM/gOeP6Zpbbr14siFDBky2jHSDfFktVbmQ4dUGTJkbMZIebVj3+Soh9NgGTJk7MOotRLTludKY2AS9GXIkNGUcYZXmriul+pQuJchQ0ZrRtosTMG1UTAy8FFrecqQIeO5jHRD6dhE7T5uNsiQIWMDRhr4SGmMg2tJrAwZMmTwgJgmumn4RqdaGTJkyCgNb/E0NS3e3f5/Q4YMGf+SQRJRklKuj2jcXm6TIUPGAxnpmAVfkrcqVwY4ZMiQ0ZrxA/+9iYfKInhGAAAAAElFTkSuQmCC" alt="微信分享二维码">
 </div>
 
 
