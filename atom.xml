@@ -100,32 +100,6 @@
   </entry>
   
   <entry>
-    <title>postgresql数据的导入和导出</title>
-    <link href="https://w940853815.github.io/2018/09/05/postsql%E6%95%B0%E6%8D%AE%E7%9A%84%E5%AF%BC%E5%85%A5%E5%92%8C%E5%AF%BC%E5%87%BA/"/>
-    <id>https://w940853815.github.io/2018/09/05/postsql数据的导入和导出/</id>
-    <published>2018-09-05T08:47:44.000Z</published>
-    <updated>2018-09-05T13:04:50.315Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;数据导出&quot;&gt;&lt;a href=&quot;#数据导出&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="数据库" scheme="https://w940853815.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    
-      <category term="数据库" scheme="https://w940853815.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ubuntu server 16 wifi连接设置</title>
     <link href="https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi%E8%BF%9E%E6%8E%A5%E8%AE%BE%E7%BD%AE/"/>
     <id>https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/</id>
@@ -148,6 +122,32 @@
     
     
       <category term="linux" scheme="https://w940853815.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>postgresql数据的导入和导出</title>
+    <link href="https://w940853815.github.io/2018/09/05/postsql%E6%95%B0%E6%8D%AE%E7%9A%84%E5%AF%BC%E5%85%A5%E5%92%8C%E5%AF%BC%E5%87%BA/"/>
+    <id>https://w940853815.github.io/2018/09/05/postsql数据的导入和导出/</id>
+    <published>2018-09-05T08:47:44.000Z</published>
+    <updated>2018-09-05T13:04:50.315Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;数据导出&quot;&gt;&lt;a href=&quot;#数据导出&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="数据库" scheme="https://w940853815.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="数据库" scheme="https://w940853815.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
