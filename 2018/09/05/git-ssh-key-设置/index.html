@@ -313,9 +313,9 @@
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2018/09/05/postsql数据的导入和导出/" id="post-next" class="post-nav-link">
+      <a href="/2018/09/05/seafile磁盘空间满了解决办法/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">postgresql数据的导入和导出</h4>
+        <h4 class="title">seafile磁盘空间满了解决办法</h4>
       </a>
     </div>
   
@@ -332,25 +332,34 @@
 
 
 
-<section class="comments" id="comments">
-    <div id="gitment_thread"></div>
-    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
-    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
-    <script>
-        var gitment = new Gitment({
-            id: md5(window.location.pathname), 
-            owner: 'w940853815',
-            repo: 'w940853815.github.io',
-            oauth: {
-                client_id: '81039e24b33521b7de9f',
-                client_secret: 'c1ef4af669a10f16d0b4618b4525ace02f0eee53',
-            },
-        })
-        gitment.render('comments')
-    </script>
-</section>
-
-
+    <section class="comments" id="comments">
+        <div id="gitment_thread"></div>
+        <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+        <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+        <script>
+            function getGitmentId(date) {
+                var pageDate = new Date(date);
+                Y = pageDate.getFullYear() + '-';
+                M = (pageDate.getMonth() + 1 < 10 ? '0' + (pageDate.getMonth() + 1) : pageDate.getMonth() + 1) + '-';
+                D = pageDate.getDate() + ' ';
+                h = pageDate.getHours() + ':';
+                m = pageDate.getMinutes() + ':';
+                s = pageDate.getSeconds();
+                return Y + M + D + h + m + s;
+            }
+            var gitment = new Gitment({
+                id: getGitmentId('Wed Sep 05 2018 16:48:44 GMT+0800'),
+                owner: 'w940853815',
+                repo: 'w940853815.github.io',
+                oauth: {
+                    client_id: '81039e24b33521b7de9f',
+                    client_secret: 'c1ef4af669a10f16d0b4618b4525ace02f0eee53',
+                },
+            })
+            gitment.render('comments')
+        </script>
+    </section>
+    
 
 
 
