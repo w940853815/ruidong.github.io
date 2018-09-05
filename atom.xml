@@ -70,11 +70,11 @@
   </entry>
   
   <entry>
-    <title>postgresql数据的导入和导出</title>
-    <link href="https://w940853815.github.io/2018/09/05/postsql%E6%95%B0%E6%8D%AE%E7%9A%84%E5%AF%BC%E5%85%A5%E5%92%8C%E5%AF%BC%E5%87%BA/"/>
-    <id>https://w940853815.github.io/2018/09/05/postsql数据的导入和导出/</id>
+    <title>ubuntu server 16 wifi连接设置</title>
+    <link href="https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi%E8%BF%9E%E6%8E%A5%E8%AE%BE%E7%BD%AE/"/>
+    <id>https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/</id>
     <published>2018-09-05T08:47:44.000Z</published>
-    <updated>2018-09-05T13:04:50.315Z</updated>
+    <updated>2018-09-05T13:04:29.829Z</updated>
     
     <summary type="html">
     
@@ -82,16 +82,16 @@
       
         
         
-          &lt;h3 id=&quot;数据导出&quot;&gt;&lt;a href=&quot;#数据导出&quot; class=&quot;headerlink&quot;
+          &lt;h3 id=&quot;ubuntu-server-16-wifi连接设置&quot;&gt;&lt;a href=&quot;#ubuntu-server-16-wifi连接设置&quot; class=&quot;headerlink&quot; title=&quot;ubuntu server 16 wifi连接设置&quot;&gt;&lt;/a&gt;ubuntu
         
       
     
     </summary>
     
-      <category term="数据库" scheme="https://w940853815.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="linux" scheme="https://w940853815.github.io/categories/linux/"/>
     
     
-      <category term="数据库" scheme="https://w940853815.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="linux" scheme="https://w940853815.github.io/tags/linux/"/>
     
   </entry>
   
@@ -126,11 +126,11 @@
   </entry>
   
   <entry>
-    <title>ubuntu server 16 wifi连接设置</title>
-    <link href="https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi%E8%BF%9E%E6%8E%A5%E8%AE%BE%E7%BD%AE/"/>
-    <id>https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/</id>
+    <title>postgresql数据的导入和导出</title>
+    <link href="https://w940853815.github.io/2018/09/05/postsql%E6%95%B0%E6%8D%AE%E7%9A%84%E5%AF%BC%E5%85%A5%E5%92%8C%E5%AF%BC%E5%87%BA/"/>
+    <id>https://w940853815.github.io/2018/09/05/postsql数据的导入和导出/</id>
     <published>2018-09-05T08:47:44.000Z</published>
-    <updated>2018-09-05T13:04:29.829Z</updated>
+    <updated>2018-09-05T13:04:50.315Z</updated>
     
     <summary type="html">
     
@@ -138,42 +138,16 @@
       
         
         
-          &lt;h3 id=&quot;ubuntu-server-16-wifi连接设置&quot;&gt;&lt;a href=&quot;#ubuntu-server-16-wifi连接设置&quot; class=&quot;headerlink&quot; title=&quot;ubuntu server 16 wifi连接设置&quot;&gt;&lt;/a&gt;ubuntu
+          &lt;h3 id=&quot;数据导出&quot;&gt;&lt;a href=&quot;#数据导出&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
-      <category term="linux" scheme="https://w940853815.github.io/categories/linux/"/>
+      <category term="数据库" scheme="https://w940853815.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="linux" scheme="https://w940853815.github.io/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ubuntu设置root密码，可ssh登陆</title>
-    <link href="https://w940853815.github.io/2018/09/05/ubuntu%E8%AE%BE%E7%BD%AEroot%E5%AF%86%E7%A0%81%EF%BC%8C%E5%8F%AFssh%E7%99%BB%E5%BD%95/"/>
-    <id>https://w940853815.github.io/2018/09/05/ubuntu设置root密码，可ssh登录/</id>
-    <published>2018-09-05T08:47:44.000Z</published>
-    <updated>2018-09-05T13:04:16.982Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;1 添加root用户密码&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-      <category term="linux" scheme="https://w940853815.github.io/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="https://w940853815.github.io/tags/linux/"/>
+      <category term="数据库" scheme="https://w940853815.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
@@ -204,6 +178,32 @@
       <category term="爬虫" scheme="https://w940853815.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
       <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ubuntu设置root密码，可ssh登陆</title>
+    <link href="https://w940853815.github.io/2018/09/05/ubuntu%E8%AE%BE%E7%BD%AEroot%E5%AF%86%E7%A0%81%EF%BC%8C%E5%8F%AFssh%E7%99%BB%E5%BD%95/"/>
+    <id>https://w940853815.github.io/2018/09/05/ubuntu设置root密码，可ssh登录/</id>
+    <published>2018-09-05T08:47:44.000Z</published>
+    <updated>2018-09-05T13:04:16.982Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1 添加root用户密码&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://w940853815.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://w940853815.github.io/tags/linux/"/>
     
   </entry>
   
