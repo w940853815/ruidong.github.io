@@ -29,7 +29,7 @@
 <meta property="og:site_name" content="ruidong-blogs">
 <meta property="og:description" content="安装(需要node,git)  1npm install -g hexo-cli  阅读hexo官方文档   https://hexo.io/zh-cn/docs/setup  完成建站，配置，熟悉hexo常用命令用法(init,new,generate,server,deploy)   使用主题 https://github.com/yscoder/hexo-theme-indigo  按照文">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-05T14:34:25.293Z">
+<meta property="og:updated_time" content="2018-09-06T03:54:05.965Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo搭建本博客">
 <meta name="twitter:description" content="安装(需要node,git)  1npm install -g hexo-cli  阅读hexo官方文档   https://hexo.io/zh-cn/docs/setup  完成建站，配置，熟悉hexo常用命令用法(init,new,generate,server,deploy)   使用主题 https://github.com/yscoder/hexo-theme-indigo  按照文">
@@ -203,9 +203,18 @@
 </li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post 文章标题</span><br></pre></td></tr></table></figure>
-<ol start="7">
+<ol start="8">
 <li>利用hexo发布到xxxx.github.io(hexo deploy)</li>
+<li>使用<a href="https://imsun.net/posts/gitment-introduction/" target="_blank" rel="noopener">gitment</a>支持评论<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#123;HEXO_ROOT&#125;/themes/indigo/_config.yml修改配置</span></span><br><span class="line"><span class="attr">gitment:</span></span><br><span class="line"><span class="attr">  owner:</span> <span class="string">xxx</span> <span class="comment"># github用户名</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">xxx.github.io</span> <span class="comment"># 不加https</span></span><br><span class="line"><span class="attr">  client_id:</span> <span class="string">xxx</span></span><br><span class="line"><span class="attr">  client_secret:</span> <span class="string">xxx</span></span><br></pre></td></tr></table></figure>
+</li>
 </ol>
+<blockquote>
+<p>使用gitment插件中间遇到的问题</p>
+<ul>
+<li>404 not found<br>repo填错，或者owner不对</li>
+<li>422 错误<br>向github提交的url参数超过了限制，解决办法<br><a href="http://hheszy.com/2018/03/19/hexo-next-validation-failed-%E6%8A%A5%E9%94%99gitment%E9%85%8D%E7%BD%AEgitment-swig/" target="_blank" rel="noopener">http://hheszy.com/2018/03/19/hexo-next-validation-failed-%E6%8A%A5%E9%94%99gitment%E9%85%8D%E7%BD%AEgitment-swig/</a></li>
+</ul>
+</blockquote>
 
         </div>
 
@@ -214,7 +223,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-09-05T14:34:25.293Z" itemprop="dateUpdated">2018-09-05 22:34:25</time>
+    最后更新时间：<time datetime="2018-09-06T03:54:05.965Z" itemprop="dateUpdated">2018-09-06 11:54:05</time>
 </span><br>
 
 
