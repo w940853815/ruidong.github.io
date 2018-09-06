@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>python3基础数据知识整理 | ruidong-blogs | 知识整理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="python">
+    <meta name="description" content="列表(list)) 字典(dict))  列表(list)123456789101112# 	两个列表相加[1, 2, 3] + [4, 5, 6]# 判断某一元素是否在列表中3 in [1, 2, 3]# 在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表）list.extend(seq)# 从列表中找出某个值第一个匹配项的索引位置list.index(obj)# 指定位置将对象">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python3基础数据知识整理">
+<meta property="og:url" content="https://w940853815.github.io/2018/09/06/python基础数据知识整理/index.html">
+<meta property="og:site_name" content="ruidong-blogs">
+<meta property="og:description" content="列表(list)) 字典(dict))  列表(list)123456789101112# 	两个列表相加[1, 2, 3] + [4, 5, 6]# 判断某一元素是否在列表中3 in [1, 2, 3]# 在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表）list.extend(seq)# 从列表中找出某个值第一个匹配项的索引位置list.index(obj)# 指定位置将对象">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-09-06T10:44:56.715Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="python3基础数据知识整理">
+<meta name="twitter:description" content="列表(list)) 字典(dict))  列表(list)123456789101112# 	两个列表相加[1, 2, 3] + [4, 5, 6]# 判断某一元素是否在列表中3 in [1, 2, 3]# 在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表）list.extend(seq)# 从列表中找出某个值第一个匹配项的索引位置list.index(obj)# 指定位置将对象">
+    
+        <link rel="alternate" type="application/atom+xml" title="ruidong-blogs" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">王瑞东</h5>
+          <a href="mailto:940853815@qq.com" title="940853815@qq.com" class="mail">940853815@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/w940853815" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://weibo.com/u/2187914081" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">python3基础数据知识整理</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">python3基础数据知识整理</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-09-06T09:04:34.000Z" itemprop="datePublished" class="page-time">
+  2018-09-06
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#列表-list"><span class="post-toc-number">1.</span> <span class="post-toc-text">列表(list)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#字典-dict"><span class="post-toc-number">2.</span> <span class="post-toc-text">字典(dict)</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-python基础数据知识整理"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">python3基础数据知识整理</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-09-06 17:04:34" datetime="2018-09-06T09:04:34.000Z"  itemprop="datePublished">2018-09-06</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <ul>
+<li><a href="#列表(list">列表(list)</a>)</li>
+<li><a href="#字典(dict">字典(dict)</a>)</li>
+</ul>
+<h1 id="列表-list"><a href="#列表-list" class="headerlink" title="列表(list)"></a>列表(list)</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 	两个列表相加</span></span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>] + [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line"><span class="comment"># 判断某一元素是否在列表中</span></span><br><span class="line"><span class="number">3</span> <span class="keyword">in</span> [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"><span class="comment"># 在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表）</span></span><br><span class="line">list.extend(seq)</span><br><span class="line"><span class="comment"># 从列表中找出某个值第一个匹配项的索引位置</span></span><br><span class="line">list.index(obj)</span><br><span class="line"><span class="comment"># 指定位置将对象插入列表</span></span><br><span class="line">list.insert(index, obj)</span><br><span class="line"><span class="comment"># 移除列表中某个值的第一个匹配项</span></span><br><span class="line">list.remove(obj)</span><br></pre></td></tr></table></figure>
+<h1 id="字典-dict"><a href="#字典-dict" class="headerlink" title="字典(dict)"></a>字典(dict)</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># dict键必须不可变，所以可以用数字，字符串或元组充当，所以用列表就不行</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除键是'Name'的条目</span></span><br><span class="line"><span class="keyword">del</span> dict[<span class="string">'Name'</span>]</span><br><span class="line"><span class="comment"># 清空词典所有条目</span></span><br><span class="line">dict.clear()</span><br><span class="line"><span class="comment"># 删除词典</span></span><br><span class="line"><span class="keyword">del</span> dict</span><br><span class="line"><span class="comment"># 计算字典元素个数，即键的总数</span></span><br><span class="line">len(dict)</span><br><span class="line"><span class="comment"># 创建一个新字典，以序列 seq 中元素做字典的键，val 为字典所有键对应的初始值</span></span><br><span class="line">dict.fromkeys(seq[, val])</span><br><span class="line"></span><br><span class="line">In [<span class="number">75</span>]: d= dict.fromkeys([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>],[<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>])</span><br><span class="line">In [<span class="number">76</span>]: d</span><br><span class="line">Out[<span class="number">76</span>]: &#123;<span class="number">1</span>: [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>], <span class="number">2</span>: [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>], <span class="number">3</span>: [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>]&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 返回指定键的值，如果值不在字典中返回default值</span></span><br><span class="line">dict.get(key, default=<span class="keyword">None</span>)</span><br><span class="line"><span class="comment"># 以列表返回一个字典所有的键</span></span><br><span class="line">dict.keys()</span><br><span class="line"></span><br><span class="line">In [<span class="number">78</span>]: d.keys()</span><br><span class="line">Out[<span class="number">78</span>]: dict_keys([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line"></span><br><span class="line">In [<span class="number">79</span>]: type(d.keys())</span><br><span class="line">Out[<span class="number">79</span>]: dict_keys</span><br><span class="line"></span><br><span class="line">In [<span class="number">80</span>]: list(d.keys())</span><br><span class="line">Out[<span class="number">80</span>]: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"><span class="comment"># 以列表返回字典中的所有值</span></span><br><span class="line">dict.values()</span><br><span class="line">In [<span class="number">81</span>]: d.values()</span><br><span class="line">Out[<span class="number">81</span>]: dict_values([[<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>], [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>], [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>]])</span><br><span class="line"><span class="comment"># 删除字典给定键 key 所对应的值，返回值为被删除的值。key值必须给出。 否则，返回default值。</span></span><br><span class="line">pop(key[,default])</span><br><span class="line"></span><br><span class="line">In [<span class="number">83</span>]: d.pop(<span class="number">1</span>)</span><br><span class="line">Out[<span class="number">83</span>]: [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 随机返回并删除字典中的一对键和值。</span></span><br><span class="line">popitem()</span><br><span class="line"></span><br><span class="line">In [<span class="number">84</span>]: d.popitem()</span><br><span class="line">Out[<span class="number">84</span>]: (<span class="number">3</span>, [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>])</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>未完待续…</p>
+</blockquote>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2018-09-06T10:44:56.715Z" itemprop="dateUpdated">2018-09-06 18:44:56</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/09/06/python基础数据知识整理/" target="_blank" rel="external">https://w940853815.github.io/2018/09/06/python基础数据知识整理/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://w940853815.github.io">
+            <img src="/img/avatar.jpg" alt="王瑞东">
+            王瑞东
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://w940853815.github.io/2018/09/06/python基础数据知识整理/&title=《python3基础数据知识整理》 — ruidong-blogs&pic=https://w940853815.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://w940853815.github.io/2018/09/06/python基础数据知识整理/&title=《python3基础数据知识整理》 — ruidong-blogs&source=知识整理" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://w940853815.github.io/2018/09/06/python基础数据知识整理/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《python3基础数据知识整理》 — ruidong-blogs&url=https://w940853815.github.io/2018/09/06/python基础数据知识整理/&via=https://w940853815.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://w940853815.github.io/2018/09/06/python基础数据知识整理/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2018/09/05/hexo博客搭建/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">hexo搭建本博客</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+    <section class="comments" id="comments">
+        <div id="gitment_thread"></div>
+        <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+        <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+        <script>
+            function getGitmentId(date) {
+                var pageDate = new Date(date);
+                Y = pageDate.getFullYear() + '-';
+                M = (pageDate.getMonth() + 1 < 10 ? '0' + (pageDate.getMonth() + 1) : pageDate.getMonth() + 1) + '-';
+                D = pageDate.getDate() + ' ';
+                h = pageDate.getHours() + ':';
+                m = pageDate.getMinutes() + ':';
+                s = pageDate.getSeconds();
+                return Y + M + D + h + m + s;
+            }
+            var gitment = new Gitment({
+                id: getGitmentId('Thu Sep 06 2018 17:04:34 GMT+0800'),
+                owner: 'w940853815',
+                repo: 'w940853815.github.io',
+                oauth: {
+                    client_id: '81039e24b33521b7de9f',
+                    client_secret: 'c1ef4af669a10f16d0b4618b4525ace02f0eee53',
+                },
+            })
+            gitment.render('comments')
+        </script>
+    </section>
+    
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        非常谢谢~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>王瑞东 &copy; 2015 - 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://w940853815.github.io/2018/09/06/python基础数据知识整理/&title=《python3基础数据知识整理》 — ruidong-blogs&pic=https://w940853815.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://w940853815.github.io/2018/09/06/python基础数据知识整理/&title=《python3基础数据知识整理》 — ruidong-blogs&source=知识整理" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://w940853815.github.io/2018/09/06/python基础数据知识整理/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《python3基础数据知识整理》 — ruidong-blogs&url=https://w940853815.github.io/2018/09/06/python基础数据知识整理/&via=https://w940853815.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://w940853815.github.io/2018/09/06/python基础数据知识整理/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACs0lEQVR42u3awU7kQAwEUP7/p1mJ00rshKp2G1jp5YSGSdIvh7Sn7Le3+Hj/OPJPPv+3Pev9r+P5mhcOPDw8vKOlvzqS5X7+/qsl5nd/vk6yZjw8PLxt3vNLPGHPv5/cvd148PDw8H6Wlyx9ezPAw8PD+794bVHbIpN74eHh4f0eXrLQ5FX+zGjL5XY9eHh4eN/Daxtgv+Hvxf4eHh4e3qCrnm8Dzy/6ZPNoQ+RotXh4eHgLvHygajIg1TbD5oV4PS+Gh4eHF/OuPaFyMCvfPCaPBg8PD2+Dl1+ubWK1V86bW3lTDQ8PD2+b1zaZ8lf8fBQgjzbw8PDwtnlt2JqMF9yNMy40wPDw8PCu8ua3TF7i7bbRNtWKlBoPDw9vzGvDgrYUngwH5BHwFyk1Hh4e3gKvheXBRHu1yQ+AKGXBw8PDu8Rrf+q3AwdnVW4bBBe/FfDw8PAGvAm7jVzblv+tkS88PDy8DV40XxAvJYHlD+Ks+MbDw8Pb5t3qvJ8VymdXPost8PDw8Oa8dpw0X1YeH0xi4jqlxsPDw7vEuzuh1AYTZ4MC0ed4eHh4y7yzDSAvppOC+Gw04eV38PDw8BZ4+W0muWhCnfxdBxZ4eHh4A14eGcwDhVtDV8VIAR4eHt4a72yMIC+4k2Aib2sVWwUeHh7eMq8+eVx85yV4O/XwMqXGw8PDG/PultHJotsCOnn0eHh4eN/Ja1/obatpEiXM14aHh4e3zcuj2Ly0PVv02bDXaBIBDw8Pr6s/68gg3yrywvqseYaHh4f3U7yzwnfe4mo/aR8NHh4e3jYvb01NPm+L5rMwotjT8PDw8JZ5bTnbFtnPZx2uBw8PD+8X8Npz61mGMub4YnvAw8PDW+PlMWsbNLTXbB/0tawFDw8P785v/MPI9dYYwRn4Qn8PDw8P799X+AOG/Ltgf3GRuAAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '加载中.';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '加载完毕.';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
