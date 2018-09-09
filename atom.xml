@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w940853815.github.io/"/>
-  <updated>2018-09-07T03:50:18.757Z</updated>
+  <updated>2018-09-09T09:19:58.065Z</updated>
   <id>https://w940853815.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>celery使用</title>
+    <link href="https://w940853815.github.io/2018/09/07/celery%E4%BB%BB%E5%8A%A1%E7%8A%B6%E6%80%81/"/>
+    <id>https://w940853815.github.io/2018/09/07/celery任务状态/</id>
+    <published>2018-09-07T03:58:12.000Z</published>
+    <updated>2018-09-09T09:19:58.065Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;Celery任务状态&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;PENDING-&amp;gt;STARTED-&amp;gt;SUCCESS/FAILD&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;“STARTED”状态是一个特殊状态,当task_
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
+    
+      <category term="celery" scheme="https://w940853815.github.io/tags/celery/"/>
+    
+  </entry>
   
   <entry>
     <title>iview modal控制关闭</title>
@@ -126,6 +159,58 @@
   </entry>
   
   <entry>
+    <title>postgresql数据的导入和导出</title>
+    <link href="https://w940853815.github.io/2018/09/05/postsql%E6%95%B0%E6%8D%AE%E7%9A%84%E5%AF%BC%E5%85%A5%E5%92%8C%E5%AF%BC%E5%87%BA/"/>
+    <id>https://w940853815.github.io/2018/09/05/postsql数据的导入和导出/</id>
+    <published>2018-09-05T08:47:44.000Z</published>
+    <updated>2018-09-05T13:04:50.315Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;数据导出&quot;&gt;&lt;a href=&quot;#数据导出&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="数据库" scheme="https://w940853815.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="数据库" scheme="https://w940853815.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ubuntu server 16 wifi连接设置</title>
+    <link href="https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi%E8%BF%9E%E6%8E%A5%E8%AE%BE%E7%BD%AE/"/>
+    <id>https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/</id>
+    <published>2018-09-05T08:47:44.000Z</published>
+    <updated>2018-09-05T13:04:29.829Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;ubuntu-server-16-wifi连接设置&quot;&gt;&lt;a href=&quot;#ubuntu-server-16-wifi连接设置&quot; class=&quot;headerlink&quot; title=&quot;ubuntu server 16 wifi连接设置&quot;&gt;&lt;/a&gt;ubuntu
+        
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://w940853815.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://w940853815.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>seafile磁盘空间满了解决办法</title>
     <link href="https://w940853815.github.io/2018/09/05/seafile%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4%E6%BB%A1%E4%BA%86%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
     <id>https://w940853815.github.io/2018/09/05/seafile磁盘空间满了解决办法/</id>
@@ -156,32 +241,6 @@
   </entry>
   
   <entry>
-    <title>postgresql数据的导入和导出</title>
-    <link href="https://w940853815.github.io/2018/09/05/postsql%E6%95%B0%E6%8D%AE%E7%9A%84%E5%AF%BC%E5%85%A5%E5%92%8C%E5%AF%BC%E5%87%BA/"/>
-    <id>https://w940853815.github.io/2018/09/05/postsql数据的导入和导出/</id>
-    <published>2018-09-05T08:47:44.000Z</published>
-    <updated>2018-09-05T13:04:50.315Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;数据导出&quot;&gt;&lt;a href=&quot;#数据导出&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="数据库" scheme="https://w940853815.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    
-      <category term="数据库" scheme="https://w940853815.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ubuntu设置root密码，可ssh登陆</title>
     <link href="https://w940853815.github.io/2018/09/05/ubuntu%E8%AE%BE%E7%BD%AEroot%E5%AF%86%E7%A0%81%EF%BC%8C%E5%8F%AFssh%E7%99%BB%E5%BD%95/"/>
     <id>https://w940853815.github.io/2018/09/05/ubuntu设置root密码，可ssh登录/</id>
@@ -195,32 +254,6 @@
         
         
           &lt;p&gt;1 添加root用户密码&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-      <category term="linux" scheme="https://w940853815.github.io/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="https://w940853815.github.io/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ubuntu server 16 wifi连接设置</title>
-    <link href="https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi%E8%BF%9E%E6%8E%A5%E8%AE%BE%E7%BD%AE/"/>
-    <id>https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/</id>
-    <published>2018-09-05T08:47:44.000Z</published>
-    <updated>2018-09-05T13:04:29.829Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;ubuntu-server-16-wifi连接设置&quot;&gt;&lt;a href=&quot;#ubuntu-server-16-wifi连接设置&quot; class=&quot;headerlink&quot; title=&quot;ubuntu server 16 wifi连接设置&quot;&gt;&lt;/a&gt;ubuntu
         
       
     
