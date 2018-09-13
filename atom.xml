@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w940853815.github.io/"/>
-  <updated>2018-09-11T14:41:13.427Z</updated>
+  <updated>2018-09-13T06:43:02.662Z</updated>
   <id>https://w940853815.github.io/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>postgres ERROR permission denied to create database 解决方法</title>
+    <link href="https://w940853815.github.io/2018/09/13/postgres-ERROR-permission-denied-to-create-database-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>https://w940853815.github.io/2018/09/13/postgres-ERROR-permission-denied-to-create-database-解决方法/</id>
+    <published>2018-09-13T06:35:52.000Z</published>
+    <updated>2018-09-13T06:43:02.662Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ERROR:  permission denied to create database&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在mac os x上用brew安装postgresql时
+        
+      
+    
+    </summary>
+    
+    
+      <category term="postgresql" scheme="https://w940853815.github.io/tags/postgresql/"/>
+    
+      <category term="数据库" scheme="https://w940853815.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
     <title>flask_sqlalchemy使用</title>
     <link href="https://w940853815.github.io/2018/09/11/flask-sqlalchemy%E4%BD%BF%E7%94%A8/"/>
     <id>https://w940853815.github.io/2018/09/11/flask-sqlalchemy使用/</id>
     <published>2018-09-11T14:19:36.000Z</published>
-    <updated>2018-09-11T14:41:13.427Z</updated>
+    <updated>2018-09-11T14:46:34.125Z</updated>
     
     <summary type="html">
     
@@ -46,9 +75,11 @@
     </summary>
     
     
+      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
+    
       <category term="flask" scheme="https://w940853815.github.io/tags/flask/"/>
     
-      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
+      <category term="flask-sqlalchemy" scheme="https://w940853815.github.io/tags/flask-sqlalchemy/"/>
     
   </entry>
   
@@ -251,11 +282,11 @@
   </entry>
   
   <entry>
-    <title>ubuntu设置root密码，可ssh登陆</title>
-    <link href="https://w940853815.github.io/2018/09/05/ubuntu%E8%AE%BE%E7%BD%AEroot%E5%AF%86%E7%A0%81%EF%BC%8C%E5%8F%AFssh%E7%99%BB%E5%BD%95/"/>
-    <id>https://w940853815.github.io/2018/09/05/ubuntu设置root密码，可ssh登录/</id>
+    <title>ubuntu server 16 wifi连接设置</title>
+    <link href="https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi%E8%BF%9E%E6%8E%A5%E8%AE%BE%E7%BD%AE/"/>
+    <id>https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/</id>
     <published>2018-09-05T08:47:44.000Z</published>
-    <updated>2018-09-05T13:04:16.982Z</updated>
+    <updated>2018-09-05T13:04:29.829Z</updated>
     
     <summary type="html">
     
@@ -263,7 +294,7 @@
       
         
         
-          &lt;p&gt;1 添加root用户密码&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td
+          &lt;h3 id=&quot;ubuntu-server-16-wifi连接设置&quot;&gt;&lt;a href=&quot;#ubuntu-server-16-wifi连接设置&quot; class=&quot;headerlink&quot; title=&quot;ubuntu server 16 wifi连接设置&quot;&gt;&lt;/a&gt;ubuntu
         
       
     
@@ -307,11 +338,11 @@
   </entry>
   
   <entry>
-    <title>ubuntu server 16 wifi连接设置</title>
-    <link href="https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi%E8%BF%9E%E6%8E%A5%E8%AE%BE%E7%BD%AE/"/>
-    <id>https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/</id>
+    <title>ubuntu设置root密码，可ssh登陆</title>
+    <link href="https://w940853815.github.io/2018/09/05/ubuntu%E8%AE%BE%E7%BD%AEroot%E5%AF%86%E7%A0%81%EF%BC%8C%E5%8F%AFssh%E7%99%BB%E5%BD%95/"/>
+    <id>https://w940853815.github.io/2018/09/05/ubuntu设置root密码，可ssh登录/</id>
     <published>2018-09-05T08:47:44.000Z</published>
-    <updated>2018-09-05T13:04:29.829Z</updated>
+    <updated>2018-09-05T13:04:16.982Z</updated>
     
     <summary type="html">
     
@@ -319,7 +350,7 @@
       
         
         
-          &lt;h3 id=&quot;ubuntu-server-16-wifi连接设置&quot;&gt;&lt;a href=&quot;#ubuntu-server-16-wifi连接设置&quot; class=&quot;headerlink&quot; title=&quot;ubuntu server 16 wifi连接设置&quot;&gt;&lt;/a&gt;ubuntu
+          &lt;p&gt;1 添加root用户密码&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td
         
       
     
