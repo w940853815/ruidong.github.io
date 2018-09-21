@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w940853815.github.io/"/>
-  <updated>2018-09-21T08:37:09.541Z</updated>
+  <updated>2018-09-21T08:59:49.807Z</updated>
   <id>https://w940853815.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>* No PostgreSQL clusters exist; see &#39;man pg_createcluster&#39;</title>
+    <link href="https://w940853815.github.io/2018/09/21/No-PostgreSQL-clusters-exist-see-man-pg-createcluster/"/>
+    <id>https://w940853815.github.io/2018/09/21/No-PostgreSQL-clusters-exist-see-man-pg-createcluster/</id>
+    <published>2018-09-21T08:55:12.000Z</published>
+    <updated>2018-09-21T08:59:49.807Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Ubuntu14.04 PostgreSQL(9.3)卸载又重装,启动postgresql时会报No PostgreSQL clusters exist; see ‘’man pg_createcluster”错误，解决办法:&lt;/p&gt;
+&lt;figure
+        
+      
+    
+    </summary>
+    
+    
+      <category term="postgresql" scheme="https://w940853815.github.io/tags/postgresql/"/>
+    
+      <category term="数据库" scheme="https://w940853815.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="ubuntu" scheme="https://w940853815.github.io/tags/ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>.gitignore规则不生效</title>
@@ -118,9 +147,9 @@
     </summary>
     
     
-      <category term="数据库" scheme="https://w940853815.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
       <category term="postgresql" scheme="https://w940853815.github.io/tags/postgresql/"/>
+    
+      <category term="数据库" scheme="https://w940853815.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
@@ -129,7 +158,7 @@
     <link href="https://w940853815.github.io/2018/09/11/flask-sqlalchemy%E4%BD%BF%E7%94%A8/"/>
     <id>https://w940853815.github.io/2018/09/11/flask-sqlalchemy使用/</id>
     <published>2018-09-11T14:19:36.000Z</published>
-    <updated>2018-09-21T08:50:10.107Z</updated>
+    <updated>2018-09-21T08:51:26.400Z</updated>
     
     <summary type="html">
     
@@ -331,6 +360,32 @@
   </entry>
   
   <entry>
+    <title>ubuntu server 16 wifi连接设置</title>
+    <link href="https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi%E8%BF%9E%E6%8E%A5%E8%AE%BE%E7%BD%AE/"/>
+    <id>https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/</id>
+    <published>2018-09-05T08:47:44.000Z</published>
+    <updated>2018-09-05T13:04:29.829Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;ubuntu-server-16-wifi连接设置&quot;&gt;&lt;a href=&quot;#ubuntu-server-16-wifi连接设置&quot; class=&quot;headerlink&quot; title=&quot;ubuntu server 16 wifi连接设置&quot;&gt;&lt;/a&gt;ubuntu
+        
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://w940853815.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://w940853815.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>seafile磁盘空间满了解决办法</title>
     <link href="https://w940853815.github.io/2018/09/05/seafile%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4%E6%BB%A1%E4%BA%86%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
     <id>https://w940853815.github.io/2018/09/05/seafile磁盘空间满了解决办法/</id>
@@ -357,32 +412,6 @@
       <category term="linux" scheme="https://w940853815.github.io/tags/linux/"/>
     
       <category term="seafile" scheme="https://w940853815.github.io/tags/seafile/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ubuntu server 16 wifi连接设置</title>
-    <link href="https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi%E8%BF%9E%E6%8E%A5%E8%AE%BE%E7%BD%AE/"/>
-    <id>https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/</id>
-    <published>2018-09-05T08:47:44.000Z</published>
-    <updated>2018-09-05T13:04:29.829Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;ubuntu-server-16-wifi连接设置&quot;&gt;&lt;a href=&quot;#ubuntu-server-16-wifi连接设置&quot; class=&quot;headerlink&quot; title=&quot;ubuntu server 16 wifi连接设置&quot;&gt;&lt;/a&gt;ubuntu
-        
-      
-    
-    </summary>
-    
-      <category term="linux" scheme="https://w940853815.github.io/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="https://w940853815.github.io/tags/linux/"/>
     
   </entry>
   
