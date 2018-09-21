@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w940853815.github.io/"/>
-  <updated>2018-09-13T06:43:02.662Z</updated>
+  <updated>2018-09-21T08:37:09.541Z</updated>
   <id>https://w940853815.github.io/</id>
   
   <author>
@@ -15,6 +15,85 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>.gitignore规则不生效</title>
+    <link href="https://w940853815.github.io/2018/09/21/gitignore%E8%A7%84%E5%88%99%E4%B8%8D%E7%94%9F%E6%95%88/"/>
+    <id>https://w940853815.github.io/2018/09/21/gitignore规则不生效/</id>
+    <published>2018-09-21T08:35:17.000Z</published>
+    <updated>2018-09-21T08:37:09.541Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的。&lt;/p&gt;
+&lt;p&gt;解决方法就是先把本地缓存删除（改变成未track状态），然后再提交:&lt;/p&gt;
+&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+      <category term="git" scheme="https://w940853815.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TypeError: the JSON object must be str, not &#39;bytes&#39;</title>
+    <link href="https://w940853815.github.io/2018/09/21/TypeError-the-JSON-object-must-be-str-not-bytes/"/>
+    <id>https://w940853815.github.io/2018/09/21/TypeError-the-JSON-object-must-be-str-not-bytes/</id>
+    <published>2018-09-21T08:28:42.000Z</published>
+    <updated>2018-09-21T08:34:08.585Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;res类型是bytes时&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ModuleNotFoundError: No module named &#39;kombu.async&#39;</title>
+    <link href="https://w940853815.github.io/2018/09/21/ModuleNotFoundError-No-module-named-kombu-async/"/>
+    <id>https://w940853815.github.io/2018/09/21/ModuleNotFoundError-No-module-named-kombu-async/</id>
+    <published>2018-09-21T08:24:51.000Z</published>
+    <updated>2018-09-21T08:28:14.016Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;启动celery时报错ModuleNotFoundError: No module named ‘kombu.async’&lt;/p&gt;
+&lt;p&gt;解决办法&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+      <category term="celery" scheme="https://w940853815.github.io/tags/celery/"/>
+    
+      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>postgres ERROR permission denied to create database 解决方法</title>
@@ -39,9 +118,9 @@
     </summary>
     
     
-      <category term="postgresql" scheme="https://w940853815.github.io/tags/postgresql/"/>
-    
       <category term="数据库" scheme="https://w940853815.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="postgresql" scheme="https://w940853815.github.io/tags/postgresql/"/>
     
   </entry>
   
@@ -50,7 +129,7 @@
     <link href="https://w940853815.github.io/2018/09/11/flask-sqlalchemy%E4%BD%BF%E7%94%A8/"/>
     <id>https://w940853815.github.io/2018/09/11/flask-sqlalchemy使用/</id>
     <published>2018-09-11T14:19:36.000Z</published>
-    <updated>2018-09-11T14:46:34.125Z</updated>
+    <updated>2018-09-21T08:50:10.107Z</updated>
     
     <summary type="html">
     
@@ -110,9 +189,9 @@
     </summary>
     
     
-      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
-    
       <category term="celery" scheme="https://w940853815.github.io/tags/celery/"/>
+    
+      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
     
   </entry>
   
@@ -121,7 +200,7 @@
     <link href="https://w940853815.github.io/2018/09/07/iview-modal%E6%8E%A7%E5%88%B6%E5%85%B3%E9%97%AD/"/>
     <id>https://w940853815.github.io/2018/09/07/iview-modal控制关闭/</id>
     <published>2018-09-07T03:44:27.000Z</published>
-    <updated>2018-09-11T08:12:32.758Z</updated>
+    <updated>2018-09-21T06:54:02.058Z</updated>
     
     <summary type="html">
     
@@ -308,6 +387,32 @@
   </entry>
   
   <entry>
+    <title>ubuntu设置root密码，可ssh登陆</title>
+    <link href="https://w940853815.github.io/2018/09/05/ubuntu%E8%AE%BE%E7%BD%AEroot%E5%AF%86%E7%A0%81%EF%BC%8C%E5%8F%AFssh%E7%99%BB%E5%BD%95/"/>
+    <id>https://w940853815.github.io/2018/09/05/ubuntu设置root密码，可ssh登录/</id>
+    <published>2018-09-05T08:47:44.000Z</published>
+    <updated>2018-09-05T13:04:16.982Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1 添加root用户密码&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://w940853815.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://w940853815.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>爬取不同分辨率下的不同地图图片数据</title>
     <link href="https://w940853815.github.io/2018/09/05/%E7%88%AC%E5%8F%96%E4%B8%8D%E5%90%8C%E5%88%86%E8%BE%A8%E7%8E%87%E4%B8%8B%E7%9A%84%E4%B8%8D%E5%90%8C%E5%9C%B0%E5%9B%BE%E5%9B%BE%E7%89%87%E6%95%B0%E6%8D%AE/"/>
     <id>https://w940853815.github.io/2018/09/05/爬取不同分辨率下的不同地图图片数据/</id>
@@ -334,32 +439,6 @@
       <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
     
       <category term="爬虫" scheme="https://w940853815.github.io/tags/%E7%88%AC%E8%99%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ubuntu设置root密码，可ssh登陆</title>
-    <link href="https://w940853815.github.io/2018/09/05/ubuntu%E8%AE%BE%E7%BD%AEroot%E5%AF%86%E7%A0%81%EF%BC%8C%E5%8F%AFssh%E7%99%BB%E5%BD%95/"/>
-    <id>https://w940853815.github.io/2018/09/05/ubuntu设置root密码，可ssh登录/</id>
-    <published>2018-09-05T08:47:44.000Z</published>
-    <updated>2018-09-05T13:04:16.982Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;1 添加root用户密码&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-      <category term="linux" scheme="https://w940853815.github.io/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="https://w940853815.github.io/tags/linux/"/>
     
   </entry>
   

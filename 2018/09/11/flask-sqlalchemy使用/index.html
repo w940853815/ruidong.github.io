@@ -29,7 +29,7 @@
 <meta property="og:site_name" content="ruidong-blogs">
 <meta property="og:description" content="postgresql—flask-sqlalchemy字段对应     Postgresql Flask-sqlachemy     varchar2 （有长度） db.Column(db.String(50))   Init db.Column(db.Integer)   timestamp db.Column(db.DateTime)   varchar2 （无长度） db.Column(d">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-11T14:46:34.125Z">
+<meta property="og:updated_time" content="2018-09-21T08:50:10.107Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="flask_sqlalchemy使用">
 <meta name="twitter:description" content="postgresql—flask-sqlalchemy字段对应     Postgresql Flask-sqlachemy     varchar2 （有长度） db.Column(db.String(50))   Init db.Column(db.Integer)   timestamp db.Column(db.DateTime)   varchar2 （无长度） db.Column(d">
@@ -213,14 +213,22 @@
 </table>
 <ul>
 <li><p>主键默认使用uuid</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id = db.Column(db.String(<span class="number">64</span>), primary_key=<span class="keyword">True</span>, default=uuid.uuid4())</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id = db.Column(db.String(<span class="number">64</span>), primary_key=<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>字段不为空</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">name = db.Column(db.String(<span class="number">50</span>), nullable=<span class="keyword">False</span>)</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>设置外键</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">org_id = db.Column(db.String(<span class="number">64</span>), db.ForeignKey(<span class="string">'tb_org.org_id'</span>))</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">org_id = db.Column(db.String(<span class="number">64</span>), db.ForeignKey(<span class="string">'tb_org.org_id'</span>))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建索引</p>
+</li>
 </ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">name = db.Column(db.String(<span class="number">50</span>), index=<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
+<p>#注意：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id = db.Column(db.String(<span class="number">64</span>), primary_key=<span class="keyword">True</span>, default=uuid.uuid4())</span><br></pre></td></tr></table></figure>
+<p>这样默认值会再添加完一条数据，再次添加一条数据时，会主键id已存在，所以不要采取这种方式，应在插入时生成一个新的uuid，例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tb_u = tb_user(user_id=uuid.uuid4(),user_phone=phone)</span><br></pre></td></tr></table></figure>
 
         </div>
 
@@ -229,7 +237,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-09-11T14:46:34.125Z" itemprop="dateUpdated">2018-09-11 22:46:34</time>
+    最后更新时间：<time datetime="2018-09-21T08:50:10.107Z" itemprop="dateUpdated">2018-09-21 16:50:10</time>
 </span><br>
 
 
