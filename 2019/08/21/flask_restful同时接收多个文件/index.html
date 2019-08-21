@@ -14,25 +14,25 @@
     
     
     
-    <title>flask_sqlalchemy使用 | ruidong-blogs | 知识整理</title>
+    <title>flask_restfule接收多个文件 | ruidong-blogs | 知识整理</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="flask,python,flask-sqlalchemy">
-    <meta name="description" content="postgresql—flask-sqlalchemy字段对应     Postgresql Flask-sqlachemy     varchar2 （有长度） db.Column(db.String(50))   Init db.Column(db.Integer)   timestamp db.Column(db.DateTime)   varchar2 （无长度） db.Column(d">
-<meta name="keywords" content="flask,python,flask-sqlalchemy">
+    <meta name="keywords" content="flask,python,flask-restful">
+    <meta name="description" content="添加action=’append’即可接受多个文件 12345678910111213@rest_resourceclass Uploads(BaseResource):    endpoints = [&apos;/uploads&apos;]    @token_auth.login_required    def post(self, *args, **kwargs):        parser = reqp">
+<meta name="keywords" content="flask,python,flask-restful">
 <meta property="og:type" content="article">
-<meta property="og:title" content="flask_sqlalchemy使用">
-<meta property="og:url" content="https://w940853815.github.io/2018/09/11/flask-sqlalchemy使用/index.html">
+<meta property="og:title" content="flask_restfule接收多个文件">
+<meta property="og:url" content="https://w940853815.github.io/2019/08/21/flask_restful同时接收多个文件/index.html">
 <meta property="og:site_name" content="ruidong-blogs">
-<meta property="og:description" content="postgresql—flask-sqlalchemy字段对应     Postgresql Flask-sqlachemy     varchar2 （有长度） db.Column(db.String(50))   Init db.Column(db.Integer)   timestamp db.Column(db.DateTime)   varchar2 （无长度） db.Column(d">
+<meta property="og:description" content="添加action=’append’即可接受多个文件 12345678910111213@rest_resourceclass Uploads(BaseResource):    endpoints = [&apos;/uploads&apos;]    @token_auth.login_required    def post(self, *args, **kwargs):        parser = reqp">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-21T08:51:26.400Z">
+<meta property="og:updated_time" content="2019-08-21T03:29:02.984Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="flask_sqlalchemy使用">
-<meta name="twitter:description" content="postgresql—flask-sqlalchemy字段对应     Postgresql Flask-sqlachemy     varchar2 （有长度） db.Column(db.String(50))   Init db.Column(db.Integer)   timestamp db.Column(db.DateTime)   varchar2 （无长度） db.Column(d">
+<meta name="twitter:title" content="flask_restfule接收多个文件">
+<meta name="twitter:description" content="添加action=’append’即可接受多个文件 12345678910111213@rest_resourceclass Uploads(BaseResource):    endpoints = [&apos;/uploads&apos;]    @token_auth.login_required    def post(self, *args, **kwargs):        parser = reqp">
     
         <link rel="alternate" type="application/atom+xml" title="ruidong-blogs" href="/atom.xml">
     
@@ -120,7 +120,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">flask_sqlalchemy使用</div>
+        <div class="flex-col header-title ellipsis">flask_restfule接收多个文件</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -142,11 +142,11 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">flask_sqlalchemy使用</h1>
+        <h1 class="title">flask_restfule接收多个文件</h1>
         <h5 class="subtitle">
             
-                <time datetime="2018-09-11T14:19:36.000Z" itemprop="datePublished" class="page-time">
-  2018-09-11
+                <time datetime="2019-08-21T03:28:36.000Z" itemprop="datePublished" class="page-time">
+  2019-08-21
 </time>
 
 
@@ -163,13 +163,13 @@
 <div class="container body-wrap">
     
 
-<article id="post-flask-sqlalchemy使用"
+<article id="post-flask_restful同时接收多个文件"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">flask_sqlalchemy使用</h1>
+        <h1 class="post-card-title">flask_restfule接收多个文件</h1>
         <div class="post-meta">
-            <time class="post-time" title="2018-09-11 22:19:36" datetime="2018-09-11T14:19:36.000Z"  itemprop="datePublished">2018-09-11</time>
+            <time class="post-time" title="2019-08-21 11:28:36" datetime="2019-08-21T03:28:36.000Z"  itemprop="datePublished">2019-08-21</time>
 
             
 
@@ -182,53 +182,8 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <ul>
-<li>postgresql—flask-sqlalchemy字段对应</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Postgresql</th>
-<th>Flask-sqlachemy</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>varchar2 （有长度）</td>
-<td>db.Column(db.String(50))</td>
-</tr>
-<tr>
-<td>Init</td>
-<td>db.Column(db.Integer)</td>
-</tr>
-<tr>
-<td>timestamp</td>
-<td>db.Column(db.DateTime)</td>
-</tr>
-<tr>
-<td>varchar2 （无长度）</td>
-<td>db.Column(db.String)</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><p>主键默认使用uuid</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id = db.Column(db.String(<span class="number">64</span>), primary_key=<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>字段不为空</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">name = db.Column(db.String(<span class="number">50</span>), nullable=<span class="keyword">False</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置外键</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">org_id = db.Column(db.String(<span class="number">64</span>), db.ForeignKey(<span class="string">'tb_org.org_id'</span>))</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建索引</p>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">name = db.Column(db.String(<span class="number">50</span>), index=<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
-<p>#注意：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id = db.Column(db.String(<span class="number">64</span>), primary_key=<span class="keyword">True</span>, default=uuid.uuid4())</span><br></pre></td></tr></table></figure>
-<p>这样默认值会再添加完一条数据，再次添加一条数据时，会主键id已存在，所以不要采取这种方式，应在插入时生成一个新的uuid，例如：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tb_u = tb_user(user_id=uuid.uuid4(),user_phone=phone)</span><br></pre></td></tr></table></figure>
+            <p>添加action=’append’即可接受多个文件</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@rest_resource</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Uploads</span><span class="params">(BaseResource)</span>:</span></span><br><span class="line">    endpoints = [<span class="string">'/uploads'</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">    @token_auth.login_required</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">post</span><span class="params">(self, *args, **kwargs)</span>:</span></span><br><span class="line">        parser = reqparse.RequestParser()</span><br><span class="line">        parser.add_argument(<span class="string">'file'</span>, type=werkzeug.FileStorage,location=<span class="string">'files'</span>, action=<span class="string">'append'</span>)</span><br><span class="line">        args = parser.parse_args()</span><br><span class="line">        files = args.file <span class="comment"># type(files) &gt;&gt;&gt;list</span></span><br><span class="line">        <span class="keyword">for</span> file <span class="keyword">in</span> files:</span><br><span class="line">            file.save(<span class="string">'file_path'</span>)</span><br><span class="line">        <span class="keyword">return</span> &#123;<span class="string">'msg'</span>: <span class="string">'文件上传成功！'</span>&#125;</span><br></pre></td></tr></table></figure>
 
         </div>
 
@@ -237,12 +192,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-09-21T08:51:26.400Z" itemprop="dateUpdated">2018-09-21 16:51:26</time>
+    最后更新时间：<time datetime="2019-08-21T03:29:02.984Z" itemprop="dateUpdated">2019-08-21 11:29:02</time>
 </span><br>
 
 
         
-        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/09/11/flask-sqlalchemy使用/" target="_blank" rel="external">https://w940853815.github.io/2018/09/11/flask-sqlalchemy使用/</a>
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2019/08/21/flask_restful同时接收多个文件/" target="_blank" rel="external">https://w940853815.github.io/2019/08/21/flask_restful同时接收多个文件/</a>
         
     </div>
     
@@ -263,7 +218,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/flask/">flask</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/flask-sqlalchemy/">flask-sqlalchemy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/flask/">flask</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/flask-restful/">flask-restful</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
 
 
             
@@ -273,7 +228,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://w940853815.github.io/2018/09/11/flask-sqlalchemy使用/&title=《flask_sqlalchemy使用》 — ruidong-blogs&pic=https://w940853815.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://w940853815.github.io/2019/08/21/flask_restful同时接收多个文件/&title=《flask_restfule接收多个文件》 — ruidong-blogs&pic=https://w940853815.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -283,22 +238,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://w940853815.github.io/2018/09/11/flask-sqlalchemy使用/&title=《flask_sqlalchemy使用》 — ruidong-blogs&source=知识整理" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://w940853815.github.io/2019/08/21/flask_restful同时接收多个文件/&title=《flask_restfule接收多个文件》 — ruidong-blogs&source=知识整理" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://w940853815.github.io/2018/09/11/flask-sqlalchemy使用/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://w940853815.github.io/2019/08/21/flask_restful同时接收多个文件/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《flask_sqlalchemy使用》 — ruidong-blogs&url=https://w940853815.github.io/2018/09/11/flask-sqlalchemy使用/&via=https://w940853815.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《flask_restfule接收多个文件》 — ruidong-blogs&url=https://w940853815.github.io/2019/08/21/flask_restful同时接收多个文件/&via=https://w940853815.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://w940853815.github.io/2018/09/11/flask-sqlalchemy使用/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://w940853815.github.io/2019/08/21/flask_restful同时接收多个文件/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -318,21 +273,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/2018/09/13/postgres-ERROR-permission-denied-to-create-database-解决方法/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">postgres ERROR permission denied to create database 解决方法</h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2018/09/07/celery任务状态/" id="post-next" class="post-nav-link">
+      <a href="/2019/06/20/nfs_boot_faild/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">celery使用</h4>
+        <h4 class="title">boot failed nfs,welcome to emergency mode</h4>
       </a>
     </div>
   
@@ -365,7 +313,7 @@
                 return Y + M + D + h + m + s;
             }
             var gitment = new Gitment({
-                id: getGitmentId('Tue Sep 11 2018 22:19:36 GMT+0800'),
+                id: getGitmentId('Wed Aug 21 2019 11:28:36 GMT+0800'),
                 owner: 'w940853815',
                 repo: 'w940853815.github.io',
                 oauth: {
@@ -460,7 +408,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://w940853815.github.io/2018/09/11/flask-sqlalchemy使用/&title=《flask_sqlalchemy使用》 — ruidong-blogs&pic=https://w940853815.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://w940853815.github.io/2019/08/21/flask_restful同时接收多个文件/&title=《flask_restfule接收多个文件》 — ruidong-blogs&pic=https://w940853815.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -470,22 +418,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://w940853815.github.io/2018/09/11/flask-sqlalchemy使用/&title=《flask_sqlalchemy使用》 — ruidong-blogs&source=知识整理" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://w940853815.github.io/2019/08/21/flask_restful同时接收多个文件/&title=《flask_restfule接收多个文件》 — ruidong-blogs&source=知识整理" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://w940853815.github.io/2018/09/11/flask-sqlalchemy使用/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://w940853815.github.io/2019/08/21/flask_restful同时接收多个文件/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《flask_sqlalchemy使用》 — ruidong-blogs&url=https://w940853815.github.io/2018/09/11/flask-sqlalchemy使用/&via=https://w940853815.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《flask_restfule接收多个文件》 — ruidong-blogs&url=https://w940853815.github.io/2019/08/21/flask_restful同时接收多个文件/&via=https://w940853815.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://w940853815.github.io/2018/09/11/flask-sqlalchemy使用/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://w940853815.github.io/2019/08/21/flask_restful同时接收多个文件/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -496,7 +444,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtUlEQVR42u3a0U7EMAwEQP7/p0HiDaGWtR33DmnuCZVemwlSYjb++Ig/n9+f3z/n3/p9/eqZV7/N31v+4OHh4bWGfvVJ7kmGkly/B+TjwcPDw3uG13vc1RN6i3g+ZcmY8fDw8N6Bd/+t6uDun1mdUDw8PLz/xcvDhSrpLTYGPDw8vEEY0QtVkzsnYziWteDh4eHFvMkB2Kt+fuh8Dw8PD6+4HFdD294GUJ3Wwmjx8PDwFnhJBNBbh5MrvfAifzseHh7eNi8voOdXqlvFqHEBDw8Pb4GXbANJGZ0cdPVK5FFJjYeHh3eU11uUJ80EeQNBL+z48QQ8PDy8BV5SsObbRv6tZCrz4v4PNh4eHt5RXh6qThqqqrFFNRC5tODh4eEt8AoxaLDS9srl6kZS3qLw8PDwlnnVQ/15ipwMPYlLoqMvPDw8vEO83vbQ2zby6KEKw8PDw3ueV31Bvkn0hlWIG/KIBA8PD2+Bl78yL4UnkUTe1lBuMsDDw8Nr8RLlvNTOn19t//ojOMbDw8Nb4E1K1TzGzQv06vRFz8fDw8Nb4OXHV9WlPBn6pDTP42A8PDy8U7xCMlFsMsjbDppJye0I8fDw8PZ4yU1nj/znh1j5JOLh4eFt8HptUvNlute0Wo4n8PDw8BZ4+TF8Hk/0js2SDSP5Y0QxLh4eHt6AN/nnP1/ckwh40jSAh4eH91re/eurpW1eTOcBceEIDQ8PD2+B1ztGqjYW5K0A+YRWQwo8PDy8U7xykTrg9baEY2EEHh4e3kKM29tJqg0EeYHemzg8PDy8Z3i9zWAv8E2CjEI4goeHh7fGmyz6vUL5/nqvzQsPDw/v3XhJTJAv8b2WrGrxjYeHh/c+vCThOHvQ1Zw+PDw8vDVeHkYcy4aDqKJ65IaHh4f3DG9jUa4W39V78uM0PDw8vKO8LyLsfYJybbafAAAAAElFTkSuQmCC" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACu0lEQVR42u3aQU4DMRAEwPz/03BFgt10j+0FpMoJAdm4jGQPPfN6xa+Pb6+v38+fcPWuq+dcfe7mFx4eHt7y0q8YySLuv3P/rnwrkzXj4eHhneblR/k9JmHkC71/1/2a8fDw8P4Ob7YFyVV0vyo8PDy8/8vLF5cU6LMrBw8PD+8v8NpydqV0zrfpfrs3Zy14eHh4MW+lffVbXx/p7+Hh4eEtd9Vn4wJJiNC23GYvPDw8vBO8/MDNI9e8tG0P/XadeHh4eCd4eVgwiwDasao81IjCXDw8PLzDvL3BRFJk522z2RgBHh4e3jneeuOqvVraIYM22sDDw8N7nrfSfGoX125EXrjj4eHhneOtFMTJ1rTDATk76u/h4eHhHeC14Wwb1yaNsVks8uYJeHh4eAd47QWQL302PjUDR2NheHh4eJt4bRndBqn58EH714iacHh4eHgHeHmxe39Mr48grG/W5ZPx8PDwHuElF0ayHbOtWS/H+38o8PDw8NLnJ7/UHtPrYwez36+HrvDw8PAWeG0LfzYE0G7BbPuiyQg8PDy8BV5+1LZDAEkZ3bbNZhuNh4eHt5c3iyFmRfNss9oQZEPKgoeHhxfw2vZSW3bnF8+sUL78KR4eHt4B3iwgSDCzJlZbOhdDV3h4eHhbebNIokW2gwWzAKKelcDDw8Mb8WZjAbMwoh0RaIcJipkyPDw8vE28NiCYHejt+FRScEcXAx4eHt5WXtv0mjWrkiW+ll94eHh453i7Atb8yM7HCNoG2w8/xcPDwzvAOxFY7GqG5c25DdcJHh4eXslb/5j2sJ4V0/ln4eHh4T3DW4kV8kbX7JlFsjLLWvDw8PAe4eUN/pWwox1l2HYx4OHh4R3jFS38hVGqNibGw8PDe4bXHta7LpU2LB5eDHh4eHhbeStHcxvL7lrWkf4eHh4e3nveJ8OzIhaGMOAYAAAAAElFTkSuQmCC" alt="微信分享二维码">
 </div>
 
 

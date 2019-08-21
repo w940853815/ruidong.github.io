@@ -159,6 +159,52 @@
     <ul class="post-list">
     
         <li class="post-list-item fade">
+            <article id="post-flask_restful同时接收多个文件"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2019-08-21 11:28:36" datetime="2019-08-21T03:28:36.000Z"  itemprop="datePublished">2019-08-21</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2019/08/21/flask_restful同时接收多个文件/">flask_restfule接收多个文件</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        添加action=’append’即可接受多个文件
+12345678910111213@rest_resourceclass Uploads(BaseResource):    endpoints = ['/uploads']    @token_auth.login_required    def post(self, *args, **kwargs):        parser = r...
+    
+
+        <a href="/2019/08/21/flask_restful同时接收多个文件/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/flask/">flask</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/flask-restful/">flask-restful</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
             <article id="post-nfs_boot_faild"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -618,55 +664,6 @@ PENDING”状态实际上并不是一个记录状态，它是任何未知id的�
     <div class="post-footer">
         
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iview/">iview</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-python基础数据知识整理"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2018-09-06 17:04:34" datetime="2018-09-06T09:04:34.000Z"  itemprop="datePublished">2018-09-06</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2018/09/06/python基础数据知识整理/">python3基础数据知识整理</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        
-列表(list))
-字典(dict))
-
-列表(list)123456789101112# 	两个列表相加[1, 2, 3] + [4, 5, 6]# 判断某一元素是否在列表中3 in [1, 2, 3]# 在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表）list.extend(seq)# 从列表中找出某个值第一个匹配项的索引位置list.index(obj)# 指定位置...
-    
-
-        <a href="/2018/09/06/python基础数据知识整理/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
 
     </div>
     
