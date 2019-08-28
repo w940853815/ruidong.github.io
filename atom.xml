@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w940853815.github.io/"/>
-  <updated>2019-08-21T03:29:02.984Z</updated>
+  <updated>2019-08-28T07:51:27.010Z</updated>
   <id>https://w940853815.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>断舍离读书笔记</title>
+    <link href="https://w940853815.github.io/2019/08/28/%E6%96%AD%E8%88%8D%E7%A6%BB/"/>
+    <id>https://w940853815.github.io/2019/08/28/断舍离/</id>
+    <published>2019-08-28T07:21:39.838Z</published>
+    <updated>2019-08-28T07:51:27.010Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;以自我为中心挑选物品，而不是以物品为中心&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="https://w940853815.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="读书笔记" scheme="https://w940853815.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>flask_restfule接收多个文件</title>
@@ -387,6 +417,32 @@
   </entry>
   
   <entry>
+    <title>ubuntu设置root密码，可ssh登陆</title>
+    <link href="https://w940853815.github.io/2018/09/05/ubuntu%E8%AE%BE%E7%BD%AEroot%E5%AF%86%E7%A0%81%EF%BC%8C%E5%8F%AFssh%E7%99%BB%E5%BD%95/"/>
+    <id>https://w940853815.github.io/2018/09/05/ubuntu设置root密码，可ssh登录/</id>
+    <published>2018-09-05T08:47:44.000Z</published>
+    <updated>2018-09-05T13:04:16.982Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1 添加root用户密码&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://w940853815.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://w940853815.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>seafile磁盘空间满了解决办法</title>
     <link href="https://w940853815.github.io/2018/09/05/seafile%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4%E6%BB%A1%E4%BA%86%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
     <id>https://w940853815.github.io/2018/09/05/seafile磁盘空间满了解决办法/</id>
@@ -469,32 +525,6 @@
       <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
     
       <category term="爬虫" scheme="https://w940853815.github.io/tags/%E7%88%AC%E8%99%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ubuntu设置root密码，可ssh登陆</title>
-    <link href="https://w940853815.github.io/2018/09/05/ubuntu%E8%AE%BE%E7%BD%AEroot%E5%AF%86%E7%A0%81%EF%BC%8C%E5%8F%AFssh%E7%99%BB%E5%BD%95/"/>
-    <id>https://w940853815.github.io/2018/09/05/ubuntu设置root密码，可ssh登录/</id>
-    <published>2018-09-05T08:47:44.000Z</published>
-    <updated>2018-09-05T13:04:16.982Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;1 添加root用户密码&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-      <category term="linux" scheme="https://w940853815.github.io/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="https://w940853815.github.io/tags/linux/"/>
     
   </entry>
   
