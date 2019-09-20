@@ -538,11 +538,11 @@
   </entry>
   
   <entry>
-    <title>seafile磁盘空间满了解决办法</title>
-    <link href="https://w940853815.github.io/2018/09/05/seafile%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4%E6%BB%A1%E4%BA%86%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
-    <id>https://w940853815.github.io/2018/09/05/seafile磁盘空间满了解决办法/</id>
+    <title>postgresql数据的导入和导出</title>
+    <link href="https://w940853815.github.io/2018/09/05/postsql%E6%95%B0%E6%8D%AE%E7%9A%84%E5%AF%BC%E5%85%A5%E5%92%8C%E5%AF%BC%E5%87%BA/"/>
+    <id>https://w940853815.github.io/2018/09/05/postsql数据的导入和导出/</id>
     <published>2018-09-05T08:47:44.000Z</published>
-    <updated>2018-09-05T13:04:39.549Z</updated>
+    <updated>2018-09-05T13:04:50.315Z</updated>
     
     <summary type="html">
     
@@ -550,29 +550,25 @@
       
         
         
-          &lt;h1 id=&quot;seafile磁盘空间满了解决办法&quot;&gt;&lt;a href=&quot;#seafile磁盘空间满了解决办法&quot; class=&quot;headerlink&quot; title=&quot;seafile磁盘空间满了解决办法&quot;&gt;&lt;/a&gt;seafile磁盘空间满了解决办法&lt;/h1&gt;&lt;h3
+          &lt;h3 id=&quot;数据导出&quot;&gt;&lt;a href=&quot;#数据导出&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
-      <category term="linux" scheme="https://w940853815.github.io/categories/linux/"/>
-    
-      <category term="seafile" scheme="https://w940853815.github.io/categories/linux/seafile/"/>
+      <category term="数据库" scheme="https://w940853815.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="linux" scheme="https://w940853815.github.io/tags/linux/"/>
-    
-      <category term="seafile" scheme="https://w940853815.github.io/tags/seafile/"/>
+      <category term="数据库" scheme="https://w940853815.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
   <entry>
-    <title>ubuntu server 16 wifi连接设置</title>
-    <link href="https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi%E8%BF%9E%E6%8E%A5%E8%AE%BE%E7%BD%AE/"/>
-    <id>https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/</id>
+    <title>爬取不同分辨率下的不同地图图片数据</title>
+    <link href="https://w940853815.github.io/2018/09/05/%E7%88%AC%E5%8F%96%E4%B8%8D%E5%90%8C%E5%88%86%E8%BE%A8%E7%8E%87%E4%B8%8B%E7%9A%84%E4%B8%8D%E5%90%8C%E5%9C%B0%E5%9B%BE%E5%9B%BE%E7%89%87%E6%95%B0%E6%8D%AE/"/>
+    <id>https://w940853815.github.io/2018/09/05/爬取不同分辨率下的不同地图图片数据/</id>
     <published>2018-09-05T08:47:44.000Z</published>
-    <updated>2018-09-05T13:04:29.829Z</updated>
+    <updated>2018-09-05T13:04:00.815Z</updated>
     
     <summary type="html">
     
@@ -580,16 +576,20 @@
       
         
         
-          &lt;h3 id=&quot;ubuntu-server-16-wifi连接设置&quot;&gt;&lt;a href=&quot;#ubuntu-server-16-wifi连接设置&quot; class=&quot;headerlink&quot; title=&quot;ubuntu server 16 wifi连接设置&quot;&gt;&lt;/a&gt;ubuntu
+          &lt;h1 id=&quot;爬取不同分辨率下的不同地图图片数据&quot;&gt;&lt;a href=&quot;#爬取不同分辨率下的不同地图图片数据&quot; class=&quot;headerlink&quot; title=&quot;爬取不同分辨率下的不同地图图片数据&quot;&gt;&lt;/a&gt;爬取不同分辨率下的不同地图图片数据&lt;/h1&gt;&lt;figure
         
       
     
     </summary>
     
-      <category term="linux" scheme="https://w940853815.github.io/categories/linux/"/>
+      <category term="python" scheme="https://w940853815.github.io/categories/python/"/>
+    
+      <category term="爬虫" scheme="https://w940853815.github.io/categories/python/%E7%88%AC%E8%99%AB/"/>
     
     
-      <category term="linux" scheme="https://w940853815.github.io/tags/linux/"/>
+      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
+    
+      <category term="爬虫" scheme="https://w940853815.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   

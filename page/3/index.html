@@ -159,14 +159,14 @@
     <ul class="post-list">
     
         <li class="post-list-item fade">
-            <article id="post-爬取不同分辨率下的不同地图图片数据"
+            <article id="post-ubuntu-server-16-wifi连接设置"
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
         <time class="post-time" title="2018-09-05 16:47:44" datetime="2018-09-05T08:47:44.000Z"  itemprop="datePublished">2018-09-05</time>
 
         
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/python/">python</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/python/爬虫/">爬虫</a></li></ul></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/linux/">linux</a></li></ul>
 
 
 
@@ -177,7 +177,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2018/09/05/爬取不同分辨率下的不同地图图片数据/">爬取不同分辨率下的不同地图图片数据</a>
+      <a class="post-title-link" href="/2018/09/05/ubuntu-server-16-wifi连接设置/">ubuntu server 16 wifi连接设置</a>
     </h3>
   
 
@@ -187,17 +187,29 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        爬取不同分辨率下的不同地图图片数据12345678910111213141516171819202122232425262728293031323334353637from math import *import urllibimport urllib2import requestsimport osurl_list=[]# 生成url,如/8/0/0.png,8/0/1.png.../8/...
+        ubuntu server 16 wifi连接设置
+安装驱动
+12(需要安装aptitude)aptitude install firmware-iwlwifi
+
+加载驱动
+1modprobe iwl3945
+
+安装需要的软件包
+1apt-get install wireless-tools wpasupplicant
+
+配置无线网络
+1vi /etc/network/interfaces
+...
     
 
-        <a href="/2018/09/05/爬取不同分辨率下的不同地图图片数据/" class="post-more waves-effect waves-button">
+        <a href="/2018/09/05/ubuntu-server-16-wifi连接设置/" class="post-more waves-effect waves-button">
             阅读全文…
         </a>
     </div>
     
     <div class="post-footer">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/爬虫/">爬虫</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li></ul>
 
     </div>
     
@@ -206,14 +218,14 @@
         </li>
     
         <li class="post-list-item fade">
-            <article id="post-postsql数据的导入和导出"
+            <article id="post-seafile磁盘空间满了解决办法"
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
         <time class="post-time" title="2018-09-05 16:47:44" datetime="2018-09-05T08:47:44.000Z"  itemprop="datePublished">2018-09-05</time>
 
         
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/数据库/">数据库</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/linux/">linux</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/linux/seafile/">seafile</a></li></ul></li></ul>
 
 
 
@@ -224,7 +236,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2018/09/05/postsql数据的导入和导出/">postgresql数据的导入和导出</a>
+      <a class="post-title-link" href="/2018/09/05/seafile磁盘空间满了解决办法/">seafile磁盘空间满了解决办法</a>
     </h3>
   
 
@@ -234,26 +246,25 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        数据导出PostgreSql在windows安装路径/bin目录下自带Pg_dump.exe执行程序
-执行过程：
+        seafile磁盘空间满了解决办法磁盘扩容（虚拟机）参考：http://www.linuxidc.com/Linux/2012-07/65646.htm
 
-打开windows下的命令窗口：开始-&gt;cmd-&gt;安装数据库的目录-&gt;进入bin目录；
+物理机添加一块新的硬盘，原理相同
 
-导出命令：
-1pg_dump –h localhost –U db_username –p 5432 –d db_name –f “D:/test.dmp”
+1fdisk -l :打印当前的磁盘分区表,可以看到新的磁盘加了进来
 
+分区
 
-参数列表...
+1234fdisk /dev/sda   “sda就是经过扩容的硬盘，为SCSI硬盘，IDE类型硬盘对应为hda，是对该硬...
     
 
-        <a href="/2018/09/05/postsql数据的导入和导出/" class="post-more waves-effect waves-button">
+        <a href="/2018/09/05/seafile磁盘空间满了解决办法/" class="post-more waves-effect waves-button">
             阅读全文…
         </a>
     </div>
     
     <div class="post-footer">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据库/">数据库</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/seafile/">seafile</a></li></ul>
 
     </div>
     
