@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w940853815.github.io/"/>
-  <updated>2019-12-02T02:12:48.379Z</updated>
+  <updated>2019-12-02T02:15:37.256Z</updated>
   <id>https://w940853815.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://w940853815.github.io/2019/12/02/Python%E6%B1%82%E6%9F%90%E4%B8%AA%E6%95%B0%E5%80%BC%E6%89%80%E5%9C%A8%E7%9A%84%E5%8C%BA%E9%97%B4/"/>
     <id>https://w940853815.github.io/2019/12/02/Python求某个数值所在的区间/</id>
     <published>2019-12-02T02:01:02.451Z</published>
-    <updated>2019-12-02T02:12:48.379Z</updated>
+    <updated>2019-12-02T02:15:37.256Z</updated>
     
     <summary type="html">
     
@@ -29,11 +29,7 @@
       
         
         
-          &lt;p&gt;求一个数值在哪个区间，可以使用python-intervals来实现&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;安装&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+          &lt;p&gt;求一个数值在哪个区间，可以使用&lt;a href=&quot;https://pypi.org/project/python-intervals/&quot; target=&quot;_blank&quot;
         
       
     
@@ -225,9 +221,9 @@
       <category term="python" scheme="https://w940853815.github.io/categories/python/"/>
     
     
-      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
-    
       <category term="数据库" scheme="https://w940853815.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
     
       <category term="性能分析" scheme="https://w940853815.github.io/tags/%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90/"/>
     
@@ -448,9 +444,9 @@
     </summary>
     
     
-      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
-    
       <category term="celery" scheme="https://w940853815.github.io/tags/celery/"/>
+    
+      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
     
   </entry>
   
@@ -548,9 +544,9 @@
     </summary>
     
     
-      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
-    
       <category term="celery" scheme="https://w940853815.github.io/tags/celery/"/>
+    
+      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
     
   </entry>
   
