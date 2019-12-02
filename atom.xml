@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w940853815.github.io/"/>
-  <updated>2019-11-04T03:37:40.191Z</updated>
+  <updated>2019-12-02T02:12:48.379Z</updated>
   <id>https://w940853815.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python求某个数值所在的区间</title>
+    <link href="https://w940853815.github.io/2019/12/02/Python%E6%B1%82%E6%9F%90%E4%B8%AA%E6%95%B0%E5%80%BC%E6%89%80%E5%9C%A8%E7%9A%84%E5%8C%BA%E9%97%B4/"/>
+    <id>https://w940853815.github.io/2019/12/02/Python求某个数值所在的区间/</id>
+    <published>2019-12-02T02:01:02.451Z</published>
+    <updated>2019-12-02T02:12:48.379Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;求一个数值在哪个区间，可以使用python-intervals来实现&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;安装&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://w940853815.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>jenkins初步使用</title>
@@ -418,9 +448,9 @@
     </summary>
     
     
-      <category term="celery" scheme="https://w940853815.github.io/tags/celery/"/>
-    
       <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
+    
+      <category term="celery" scheme="https://w940853815.github.io/tags/celery/"/>
     
   </entry>
   
@@ -518,9 +548,9 @@
     </summary>
     
     
-      <category term="celery" scheme="https://w940853815.github.io/tags/celery/"/>
-    
       <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
+    
+      <category term="celery" scheme="https://w940853815.github.io/tags/celery/"/>
     
   </entry>
   
@@ -577,33 +607,6 @@
     
     
       <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo搭建本博客</title>
-    <link href="https://w940853815.github.io/2018/09/05/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    <id>https://w940853815.github.io/2018/09/05/hexo博客搭建/</id>
-    <published>2018-09-05T09:25:36.000Z</published>
-    <updated>2018-09-06T03:54:05.965Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;安装(需要node,git)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-    
-      <category term="hexo" scheme="https://w940853815.github.io/tags/hexo/"/>
     
   </entry>
   
