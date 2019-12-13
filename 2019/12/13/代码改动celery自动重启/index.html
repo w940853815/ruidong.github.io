@@ -14,25 +14,25 @@
     
     
     
-    <title>ubuntu server 16 wifi连接设置 | ruidong-blogs | 知识整理</title>
+    <title>celery autoreload when code change | ruidong-blogs | 知识整理</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="linux">
-    <meta name="description" content="ubuntu server 16 wifi连接设置 安装驱动 12(需要安装aptitude)aptitude install firmware-iwlwifi  加载驱动 1modprobe iwl3945  安装需要的软件包 1apt-get install wireless-tools wpasupplicant  配置无线网络 1vi /etc/network/interfaces   1">
-<meta name="keywords" content="linux">
+    <meta name="keywords" content="celery">
+    <meta name="description" content="当调试celery相关的代码时，每次改完代码，都需要重启celery代码才可以生效，本文的目的就是当代码发生改动，celery可以自动重启,示例代码task.py如下（注：请根据自己的业务逻辑自行修改）12345678910111213from celery import Celeryapp=Celery(&quot;tasks&quot;,    backend=&quot;redis://127.0.0.1:6379/1,">
+<meta name="keywords" content="celery">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ubuntu server 16 wifi连接设置">
-<meta property="og:url" content="https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/index.html">
+<meta property="og:title" content="celery autoreload when code change">
+<meta property="og:url" content="https://w940853815.github.io/2019/12/13/代码改动celery自动重启/index.html">
 <meta property="og:site_name" content="ruidong-blogs">
-<meta property="og:description" content="ubuntu server 16 wifi连接设置 安装驱动 12(需要安装aptitude)aptitude install firmware-iwlwifi  加载驱动 1modprobe iwl3945  安装需要的软件包 1apt-get install wireless-tools wpasupplicant  配置无线网络 1vi /etc/network/interfaces   1">
+<meta property="og:description" content="当调试celery相关的代码时，每次改完代码，都需要重启celery代码才可以生效，本文的目的就是当代码发生改动，celery可以自动重启,示例代码task.py如下（注：请根据自己的业务逻辑自行修改）12345678910111213from celery import Celeryapp=Celery(&quot;tasks&quot;,    backend=&quot;redis://127.0.0.1:6379/1,">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-05T13:04:29.829Z">
+<meta property="og:updated_time" content="2019-12-13T09:10:15.940Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ubuntu server 16 wifi连接设置">
-<meta name="twitter:description" content="ubuntu server 16 wifi连接设置 安装驱动 12(需要安装aptitude)aptitude install firmware-iwlwifi  加载驱动 1modprobe iwl3945  安装需要的软件包 1apt-get install wireless-tools wpasupplicant  配置无线网络 1vi /etc/network/interfaces   1">
+<meta name="twitter:title" content="celery autoreload when code change">
+<meta name="twitter:description" content="当调试celery相关的代码时，每次改完代码，都需要重启celery代码才可以生效，本文的目的就是当代码发生改动，celery可以自动重启,示例代码task.py如下（注：请根据自己的业务逻辑自行修改）12345678910111213from celery import Celeryapp=Celery(&quot;tasks&quot;,    backend=&quot;redis://127.0.0.1:6379/1,">
     
         <link rel="alternate" type="application/atom+xml" title="ruidong-blogs" href="/atom.xml">
     
@@ -120,7 +120,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">ubuntu server 16 wifi连接设置</div>
+        <div class="flex-col header-title ellipsis">celery autoreload when code change</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -142,15 +142,15 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">ubuntu server 16 wifi连接设置</h1>
+        <h1 class="title">celery autoreload when code change</h1>
         <h5 class="subtitle">
             
-                <time datetime="2018-09-05T08:47:44.000Z" itemprop="datePublished" class="page-time">
-  2018-09-05
+                <time datetime="2019-12-13T08:52:42.577Z" itemprop="datePublished" class="page-time">
+  2019-12-13
 </time>
 
 
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/linux/">linux</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/celery/">celery</a></li></ul>
 
             
         </h5>
@@ -164,24 +164,17 @@
 
 <div class="container body-wrap">
     
-    <aside class="post-widget">
-        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
-            <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ubuntu-server-16-wifi连接设置"><span class="post-toc-number">1.</span> <span class="post-toc-text">ubuntu server 16 wifi连接设置</span></a></li></ol>
-        </nav>
-    </aside>
 
-
-<article id="post-ubuntu-server-16-wifi连接设置"
+<article id="post-代码改动celery自动重启"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">ubuntu server 16 wifi连接设置</h1>
+        <h1 class="post-card-title">celery autoreload when code change</h1>
         <div class="post-meta">
-            <time class="post-time" title="2018-09-05 16:47:44" datetime="2018-09-05T08:47:44.000Z"  itemprop="datePublished">2018-09-05</time>
+            <time class="post-time" title="2019-12-13 16:52:42" datetime="2019-12-13T08:52:42.577Z"  itemprop="datePublished">2019-12-13</time>
 
             
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/linux/">linux</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/celery/">celery</a></li></ul>
 
 
 
@@ -193,25 +186,8 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h3 id="ubuntu-server-16-wifi连接设置"><a href="#ubuntu-server-16-wifi连接设置" class="headerlink" title="ubuntu server 16 wifi连接设置"></a>ubuntu server 16 wifi连接设置</h3><ol>
-<li><p>安装驱动</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(需要安装aptitude)</span><br><span class="line">aptitude install firmware-iwlwifi</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>加载驱动</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">modprobe iwl3945</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装需要的软件包</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install wireless-tools wpasupplicant</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>配置无线网络</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/network/interfaces</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">auto wlan0</span><br><span class="line">iface wlan0 inet dhcp</span><br><span class="line">pre-up ip link set wlan0 up</span><br><span class="line">pre-up iwconfig wlan0 essid ssid</span><br><span class="line">wpa-ssid ssid</span><br><span class="line">wpa-psk password</span><br></pre></td></tr></table></figure>
-<ol start="5">
-<li>启用无线网线<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ifup -v wlan0</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+            <p>当调试celery相关的代码时，每次改完代码，都需要重启celery代码才可以生效，本文的目的就是当代码发生改动，celery可以自动重启,示例代码<strong>task.py</strong>如下（注：请根据自己的业务逻辑自行修改）<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> celery <span class="keyword">import</span> Celery</span><br><span class="line">app=Celery(<span class="string">"tasks"</span>,</span><br><span class="line">    backend=<span class="string">"redis://127.0.0.1:6379/1,</span></span><br><span class="line"><span class="string">    broker="</span>redis://<span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">6379</span>/<span class="number">1</span><span class="string">")</span></span><br><span class="line"><span class="string">@app.task</span></span><br><span class="line"><span class="string">def add(x,y):</span></span><br><span class="line"><span class="string">    return x+y</span></span><br><span class="line"><span class="string">  </span></span><br><span class="line"><span class="string">if __name__ == "</span>__main__<span class="string">":</span></span><br><span class="line"><span class="string">    from werkzeug._reloader import run_with_reloader</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    # 开发时可以直接运行python tasks.py 当前目录下文件改动时，celery会自动重启</span></span><br><span class="line"><span class="string">    run_with_reloader(app.worker_main)</span></span><br></pre></td></tr></table></figure></p>
+<p>示例代码主要用到了<strong>werkzeug</strong>库的run_with_reloader函数实现了celery自动重启</p>
 
         </div>
 
@@ -220,12 +196,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-09-05T13:04:29.829Z" itemprop="dateUpdated">2018-09-05 21:04:29</time>
+    最后更新时间：<time datetime="2019-12-13T09:10:15.940Z" itemprop="dateUpdated">2019-12-13 17:10:15</time>
 </span><br>
 
 
         
-        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/09/05/ubuntu-server-16-wifi连接设置/" target="_blank" rel="external">https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/</a>
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2019/12/13/代码改动celery自动重启/" target="_blank" rel="external">https://w940853815.github.io/2019/12/13/代码改动celery自动重启/</a>
         
     </div>
     
@@ -246,7 +222,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/celery/">celery</a></li></ul>
 
 
             
@@ -256,7 +232,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/&title=《ubuntu server 16 wifi连接设置》 — ruidong-blogs&pic=https://w940853815.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://w940853815.github.io/2019/12/13/代码改动celery自动重启/&title=《celery autoreload when code change》 — ruidong-blogs&pic=https://w940853815.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -266,22 +242,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/&title=《ubuntu server 16 wifi连接设置》 — ruidong-blogs&source=知识整理" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://w940853815.github.io/2019/12/13/代码改动celery自动重启/&title=《celery autoreload when code change》 — ruidong-blogs&source=知识整理" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://w940853815.github.io/2019/12/13/代码改动celery自动重启/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《ubuntu server 16 wifi连接设置》 — ruidong-blogs&url=https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/&via=https://w940853815.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《celery autoreload when code change》 — ruidong-blogs&url=https://w940853815.github.io/2019/12/13/代码改动celery自动重启/&via=https://w940853815.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://w940853815.github.io/2019/12/13/代码改动celery自动重启/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -301,21 +277,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/2018/09/05/爬取不同分辨率下的不同地图图片数据/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">爬取不同分辨率下的不同地图图片数据</h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2018/09/05/seafile磁盘空间满了解决办法/" id="post-next" class="post-nav-link">
+      <a href="/2019/12/06/解决es查询索引不存在导致404问题/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">seafile磁盘空间满了解决办法</h4>
+        <h4 class="title">解决es查询索引不存在导致404问题</h4>
       </a>
     </div>
   
@@ -348,7 +317,7 @@
                 return Y + M + D + h + m + s;
             }
             var gitment = new Gitment({
-                id: getGitmentId('Wed Sep 05 2018 16:47:44 GMT+0800'),
+                id: getGitmentId('Fri Dec 13 2019 16:52:42 GMT+0800'),
                 owner: 'w940853815',
                 repo: 'w940853815.github.io',
                 oauth: {
@@ -443,7 +412,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/&title=《ubuntu server 16 wifi连接设置》 — ruidong-blogs&pic=https://w940853815.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://w940853815.github.io/2019/12/13/代码改动celery自动重启/&title=《celery autoreload when code change》 — ruidong-blogs&pic=https://w940853815.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -453,22 +422,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/&title=《ubuntu server 16 wifi连接设置》 — ruidong-blogs&source=知识整理" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://w940853815.github.io/2019/12/13/代码改动celery自动重启/&title=《celery autoreload when code change》 — ruidong-blogs&source=知识整理" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://w940853815.github.io/2019/12/13/代码改动celery自动重启/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《ubuntu server 16 wifi连接设置》 — ruidong-blogs&url=https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/&via=https://w940853815.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《celery autoreload when code change》 — ruidong-blogs&url=https://w940853815.github.io/2019/12/13/代码改动celery自动重启/&via=https://w940853815.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://w940853815.github.io/2018/09/05/ubuntu-server-16-wifi连接设置/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://w940853815.github.io/2019/12/13/代码改动celery自动重启/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -479,7 +448,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACt0lEQVR42u3ay2okMRAEQP//T3thTzbLtDNLKsYL0Sczj5aiDZImqz4+4uvz7/X87tfr1bvtHZ7vfO3Cw8PDG0391fUvL5lEcofnv5NPPo+Ih4eHt8173gySWz9PcfaZfJSXr+Ph4eG9lZccdvOFPn8dDw8P7//lJZtEsqznSz8eHh7eb+blg52HvC14Fn/g4eHh7fHaAthv+HuxvoeHh4d3UFWfxbX5htGGGvU88fDw8BZ4eVNUXqw6OSLnDQTFhoGHh4d3ldcW9ZPQIY99k/u0c/h2Bzw8PLw13q1Uo/1WO3reyjAcAA8PDy/mtV9LimHF8n3QglD/VsDDw8O7xEuOrfmxux1l1rJQBLh4eHh4V3ntQj8r8M8eXBtnvJwDHh4e3gLvpBUgL/nPHtxJUwIeHh7eHq/98T9rEWiP3e1hvciq8fDw8I55eatTXqDK75kfkfNtCQ8PD2+b1x6Lk0+2QW2yuA+/i4eHh7fAyyPXlnQ3+GgfPR4eHt4Grz3OtoFs+wiK/0MyOh4eHt4aL1++k0mfP7giQXlG4uHh4S3w8gggX6xni3t7/7pghoeHh3eJt9EccNJcdTeYwMPDw9vg5ZOYle3bw/FJvPvDu3h4eHiXeLPFPTlA32oROIqG8fDw8BZ4+ZaQv5uXuPJj8dG/AQ8PD2+Bl//sP4kV8naE/JWkMIaHh4e3wWsrZvn2kEQS7VhteQwPDw9vj3cy8K24YdZ28MNM8PDw8K7yPssr3xjaMn8b+0bbGB4eHt4C76SRdBba5ilBEmcc5S54eHh4B7zZZtC2FLTbxuy4X/RH4OHh4R3zZkOetJzeqtpFGwMeHh7eW3n54XjWJjULQV7OEw8PD++tvDZanZHasBgPDw/vXby2cepWLJvHwcM0Gg8PD2+B1xbAzhfxWfk/f1h4eHh4a7w/Jbpf9FTDMr8AAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACrUlEQVR42u3aQW7CQAwFUO5/abqtRAPf9phm8WaFAg3zUsljbD8e8Xr+Wu+vXL37+pmrv0ruf3jh4eHhDbb+ut5/5v22ep/p3eHqgeLh4eHt8a4iah7Qk03P43a+Zzw8PLz78JJEObmes5M94OHh4d2Z1wvWyUbffwseHh7e3Xh5IWCefOeJdTWJx8PDw/sOL+8i3ef1Sn8PDw8Pb9xVz9tUyXhBr1A7WXh4eHgbvDzgJslufr06ztXbJx4eHt4Grzf8NCnjnh3J+pD04+Hh4S3weu38vEFVbf/nReTysYGHh4d3iJffqBqO82MmL0kkafofvxXw8PDwFnjVAax8W9VGWvUwKE+T4eHh4R3l5a2p/HpvOCBnR/09PDw8vKO8ahmiWlSdPKaod5ek/nh4eHhf4Z0K3L1mWCFpTvaAh4eHd5SXw/KnlSTZvWZbtV2Hh4eHt8ertq+qRYezdy604vDw8PAWeEkon5Ruk+S4OhaQg/Hw8PC+yavmpb3CaxTWi/eP5iPw8PDwBrw8Se0F9PKYVOvbL8F4eHh4a7zJcEAv0FcLGc3reHh4eMu83s/+3usk08+LFFGVGg8PD2+NNy+qJqSkQNwbTcDDw8P7Pi8vtubjUNVDIm+5lYcG8PDw8Ma8eeGgd5BMBraSHV7+D/Hw8PAWeJNV3Vx1RKB3UOHh4eHt8ZLyQS8053fopdEf2Hh4eHhrvGqDaj6GVW2D5ZE/Oq/w8PDwWrxncZ1KoHtHSPVwwsPDw9vgVQsNeUl3codTQ114eHh4e7xJa6padDiVOhdKFXh4eHhrvLzQUGjbF8ewemdXdDDg4eHh/SsvD8rVsaqzpQ08PDy8e/J6TaxToT8aJsDDw8Nb450t1E6aUnlhIrqOh4eHt8CbfOWkYd97ZHmhBA8PD2+B9wMW02nO0jbIWAAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 

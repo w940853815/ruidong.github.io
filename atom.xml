@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w940853815.github.io/"/>
-  <updated>2019-12-06T10:38:41.228Z</updated>
+  <updated>2019-12-13T09:10:15.940Z</updated>
   <id>https://w940853815.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>celery autoreload when code change</title>
+    <link href="https://w940853815.github.io/2019/12/13/%E4%BB%A3%E7%A0%81%E6%94%B9%E5%8A%A8celery%E8%87%AA%E5%8A%A8%E9%87%8D%E5%90%AF/"/>
+    <id>https://w940853815.github.io/2019/12/13/代码改动celery自动重启/</id>
+    <published>2019-12-13T08:52:42.577Z</published>
+    <updated>2019-12-13T09:10:15.940Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;当调试celery相关的代码时，每次改完代码，都需要重启celery代码才可以生效，本文的目的就是当代码发生改动，celery可以自动重启,示例代码&lt;strong&gt;task.py&lt;/strong&gt;如下（注：请根据自己的业务逻辑自行修改）&lt;br&gt;&lt;figure
+        
+      
+    
+    </summary>
+    
+      <category term="celery" scheme="https://w940853815.github.io/categories/celery/"/>
+    
+    
+      <category term="celery" scheme="https://w940853815.github.io/tags/celery/"/>
+    
+  </entry>
+  
+  <entry>
     <title>解决es查询索引不存在导致404问题</title>
     <link href="https://w940853815.github.io/2019/12/06/%E8%A7%A3%E5%86%B3es%E6%9F%A5%E8%AF%A2%E7%B4%A2%E5%BC%95%E4%B8%8D%E5%AD%98%E5%9C%A8%E5%AF%BC%E8%87%B4404%E9%97%AE%E9%A2%98/"/>
     <id>https://w940853815.github.io/2019/12/06/解决es查询索引不存在导致404问题/</id>
     <published>2019-12-06T08:37:28.660Z</published>
-    <updated>2019-12-06T10:38:41.228Z</updated>
+    <updated>2019-12-06T10:37:33.490Z</updated>
     
     <summary type="html">
     
@@ -32,7 +58,7 @@
           &lt;ul&gt;
 &lt;li&gt;问题&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;查询&lt;a href=&quot;http://localhost:9100/index1,index2,index3/_search某个索引不存在时，就会出错&quot; target=&quot;_blank&quot;
+&lt;p&gt;但查询&lt;a href=&quot;http://localhost:9100/index1,index2,index3/_search某个索引不存在时，就会出错&quot; target=&quot;_blank&quot;
         
       
     
@@ -250,9 +276,9 @@
       <category term="python" scheme="https://w940853815.github.io/categories/python/"/>
     
     
-      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
-    
       <category term="数据库" scheme="https://w940853815.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
     
       <category term="性能分析" scheme="https://w940853815.github.io/tags/%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90/"/>
     
@@ -576,34 +602,6 @@
       <category term="celery" scheme="https://w940853815.github.io/tags/celery/"/>
     
       <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>iview modal控制关闭</title>
-    <link href="https://w940853815.github.io/2018/09/07/iview-modal%E6%8E%A7%E5%88%B6%E5%85%B3%E9%97%AD/"/>
-    <id>https://w940853815.github.io/2018/09/07/iview-modal控制关闭/</id>
-    <published>2018-09-07T03:44:27.000Z</published>
-    <updated>2018-09-21T06:54:02.058Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;使用 iview 的 Modal对话框实现单击确定的时候不直接关闭对话框，而是经过一些判断，满足自己的条件的时候再关闭对话框&lt;/p&gt;
-&lt;p&gt;使用iview的 slot 自定义样式实现，经过一些业务逻辑判断，可控制modal显示关闭&lt;/p&gt;
-&lt;figure
-        
-      
-    
-    </summary>
-    
-    
-      <category term="vue" scheme="https://w940853815.github.io/tags/vue/"/>
-    
-      <category term="iview" scheme="https://w940853815.github.io/tags/iview/"/>
     
   </entry>
   
