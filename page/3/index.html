@@ -159,6 +159,60 @@
     <ul class="post-list">
     
         <li class="post-list-item fade">
+            <article id="post-celery任务状态"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2018-09-07 11:58:12" datetime="2018-09-07T03:58:12.000Z"  itemprop="datePublished">2018-09-07</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2018/09/07/celery任务状态/">celery使用</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        
+Celery任务状态
+
+
+PENDING-&gt;STARTED-&gt;SUCCESS/FAILD
+
+
+“STARTED”状态是一个特殊状态,当task_trace_started配置被设置为True或者@task(track_started=True)选项被设置时才会有出现STARTED状态
+
+PENDING”状态实际上并不是一个记录状态，它是任何未知id的任务的默认状态，下面的例子中...
+    
+
+        <a href="/2018/09/07/celery任务状态/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/celery/">celery</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
             <article id="post-iview-modal控制关闭"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -372,53 +426,6 @@ https://github.com/yscoder/hexo-theme-indigo
         </li>
     
         <li class="post-list-item fade">
-            <article id="post-爬取不同分辨率下的不同地图图片数据"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2018-09-05 16:47:44" datetime="2018-09-05T08:47:44.000Z"  itemprop="datePublished">2018-09-05</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/python/">python</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/python/爬虫/">爬虫</a></li></ul></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2018/09/05/爬取不同分辨率下的不同地图图片数据/">爬取不同分辨率下的不同地图图片数据</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        爬取不同分辨率下的不同地图图片数据12345678910111213141516171819202122232425262728293031323334353637from math import *import urllibimport urllib2import requestsimport osurl_list=[]# 生成url,如/8/0/0.png,8/0/1.png.../8/...
-    
-
-        <a href="/2018/09/05/爬取不同分辨率下的不同地图图片数据/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/爬虫/">爬虫</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
             <article id="post-ubuntu-server-16-wifi连接设置"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -470,6 +477,111 @@ https://github.com/yscoder/hexo-theme-indigo
     <div class="post-footer">
         
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-ubuntu设置root密码，可ssh登录"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2018-09-05 16:47:44" datetime="2018-09-05T08:47:44.000Z"  itemprop="datePublished">2018-09-05</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/linux/">linux</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2018/09/05/ubuntu设置root密码，可ssh登录/">ubuntu设置root密码，可ssh登陆</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        1 添加root用户密码1sudo passwd root
+2 设置root用户可ssh登录1vi /etc/ssh/sshd_config
+
+找到1PermitRootLogin without-password
+
+
+/- 改为1PermitRootLogin yes
+
+重启ssh1service ssh restart
+
+
+
+    
+
+        <a href="/2018/09/05/ubuntu设置root密码，可ssh登录/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-爬取不同分辨率下的不同地图图片数据"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2018-09-05 16:47:44" datetime="2018-09-05T08:47:44.000Z"  itemprop="datePublished">2018-09-05</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/python/">python</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/python/爬虫/">爬虫</a></li></ul></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2018/09/05/爬取不同分辨率下的不同地图图片数据/">爬取不同分辨率下的不同地图图片数据</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        爬取不同分辨率下的不同地图图片数据12345678910111213141516171819202122232425262728293031323334353637from math import *import urllibimport urllib2import requestsimport osurl_list=[]# 生成url,如/8/0/0.png,8/0/1.png.../8/...
+    
+
+        <a href="/2018/09/05/爬取不同分辨率下的不同地图图片数据/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/爬虫/">爬虫</a></li></ul>
 
     </div>
     
@@ -581,66 +693,6 @@ https://github.com/yscoder/hexo-theme-indigo
     <div class="post-footer">
         
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据库/">数据库</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-ubuntu设置root密码，可ssh登录"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2018-09-05 16:47:44" datetime="2018-09-05T08:47:44.000Z"  itemprop="datePublished">2018-09-05</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/linux/">linux</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2018/09/05/ubuntu设置root密码，可ssh登录/">ubuntu设置root密码，可ssh登陆</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        1 添加root用户密码1sudo passwd root
-2 设置root用户可ssh登录1vi /etc/ssh/sshd_config
-
-找到
-1PermitRootLogin without-password
-
-改为
-1PermitRootLogin yes
-
-重启ssh
-1service ssh restart
-
-
-
-    
-
-        <a href="/2018/09/05/ubuntu设置root密码，可ssh登录/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li></ul>
 
     </div>
     
