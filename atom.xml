@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w940853815.github.io/"/>
-  <updated>2020-01-16T08:08:44.492Z</updated>
+  <updated>2020-01-31T07:43:52.807Z</updated>
   <id>https://w940853815.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git设置socket5代理</title>
+    <link href="https://w940853815.github.io/2020/01/31/git%E8%AE%BE%E7%BD%AEsock5%E4%BB%A3%E7%90%86/"/>
+    <id>https://w940853815.github.io/2020/01/31/git设置sock5代理/</id>
+    <published>2020-01-31T07:31:08.642Z</published>
+    <updated>2020-01-31T07:43:52.807Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;过年在家里，发现github提交代码提交不了，总是失败，ping&lt;code&gt;github.com&lt;/code&gt;域名不通，于是想对github仓库设置socket5代理，设置如下:&lt;/p&gt;
+&lt;p&gt;在你仓库目录下执行&lt;/p&gt;
+&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+      <category term="socket5" scheme="https://w940853815.github.io/categories/socket5/"/>
+    
+      <category term="proxy - git" scheme="https://w940853815.github.io/categories/socket5/proxy-git/"/>
+    
+    
+      <category term="socket5" scheme="https://w940853815.github.io/tags/socket5/"/>
+    
+      <category term="proxy - git" scheme="https://w940853815.github.io/tags/proxy-git/"/>
+    
+  </entry>
   
   <entry>
     <title>ubuntu双网卡配置</title>
@@ -562,34 +594,6 @@
     
     
       <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ModuleNotFoundError: No module named &#39;kombu.async&#39;</title>
-    <link href="https://w940853815.github.io/2018/09/21/ModuleNotFoundError-No-module-named-kombu-async/"/>
-    <id>https://w940853815.github.io/2018/09/21/ModuleNotFoundError-No-module-named-kombu-async/</id>
-    <published>2018-09-21T08:24:51.000Z</published>
-    <updated>2018-09-21T08:28:14.016Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;启动celery时报错ModuleNotFoundError: No module named ‘kombu.async’&lt;/p&gt;
-&lt;p&gt;解决办法&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
-    
-      <category term="celery" scheme="https://w940853815.github.io/tags/celery/"/>
     
   </entry>
   
