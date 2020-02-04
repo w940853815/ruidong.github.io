@@ -29,7 +29,7 @@
 <meta property="og:site_name" content="ruidong-blogs">
 <meta property="og:description" content="过年在家里，发现github提交代码提交不了，总是失败，pinggithub.com域名不通，于是想对github仓库设置socket5代理，设置如下: 在你仓库目录下执行 1git config --global https.proxy &apos;socks5://127.0.0.1:1080&apos; 注意先执行git remote -v看你的终端输出什么，我这里远端URL地址使用的是https方式，设置完成">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-01-31T07:43:52.807Z">
+<meta property="og:updated_time" content="2020-02-02T06:52:47.877Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git设置socket5代理">
 <meta name="twitter:description" content="过年在家里，发现github提交代码提交不了，总是失败，pinggithub.com域名不通，于是想对github仓库设置socket5代理，设置如下: 在你仓库目录下执行 1git config --global https.proxy &apos;socks5://127.0.0.1:1080&apos; 注意先执行git remote -v看你的终端输出什么，我这里远端URL地址使用的是https方式，设置完成">
@@ -164,6 +164,13 @@
 
 <div class="container body-wrap">
     
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#补充修改"><span class="post-toc-number">1.</span> <span class="post-toc-text">补充修改</span></a></li></ol>
+        </nav>
+    </aside>
+
 
 <article id="post-git设置sock5代理"
   class="post-article article-type-post fade" itemprop="blogPost">
@@ -190,6 +197,8 @@
 <p>在你仓库目录下执行</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global https.proxy <span class="string">'socks5://127.0.0.1:1080'</span></span><br></pre></td></tr></table></figure>
 <p>注意先执行<code>git remote -v</code>看你的终端输出什么，我这里远端URL地址使用的是https方式，设置完成后就可以正常更新仓库代码了，速度也快了许多</p>
+<h3 id="补充修改"><a href="#补充修改" class="headerlink" title="补充修改"></a><strong>补充修改</strong></h3><p>上述命令是针对全局的，其它仓库也是使用该代理</p>
+<p>如果要取消使用<code>git config --global --edit</code>编辑配置文件删除对应字段即可</p>
 <p>本文参考<a href="https://gist.github.com/laispace/666dd7b27e9116faece" target="_blank" rel="noopener">https://gist.github.com/laispace/666dd7b27e9116faece</a></p>
 
         </div>
@@ -199,7 +208,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2020-01-31T07:43:52.807Z" itemprop="dateUpdated">2020-01-31 15:43:52</time>
+    最后更新时间：<time datetime="2020-02-02T06:52:47.877Z" itemprop="dateUpdated">2020-02-02 14:52:47</time>
 </span><br>
 
 
