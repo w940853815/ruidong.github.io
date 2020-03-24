@@ -38,7 +38,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
     <script>window.lazyScripts=[]</script>
-    <script data-ad-client="ca-pub-9534314640236837" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-5981603616981675" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- custom head -->
     
 
@@ -646,14 +646,14 @@ https://github.com/yscoder/hexo-theme-indigo
         </li>
     
         <li class="post-list-item fade">
-            <article id="post-ubuntu设置root密码，可ssh登录"
+            <article id="post-postsql数据的导入和导出"
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
         <time class="post-time" title="2018-09-05 16:47:44" datetime="2018-09-05T08:47:44.000Z"  itemprop="datePublished">2018-09-05</time>
 
         
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/linux/">linux</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/数据库/">数据库</a></li></ul>
 
 
 
@@ -664,7 +664,7 @@ https://github.com/yscoder/hexo-theme-indigo
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2018/09/05/ubuntu设置root密码，可ssh登录/">ubuntu设置root密码，可ssh登陆</a>
+      <a class="post-title-link" href="/2018/09/05/postsql数据的导入和导出/">postgresql数据的导入和导出</a>
     </h3>
   
 
@@ -674,28 +674,26 @@ https://github.com/yscoder/hexo-theme-indigo
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        1 添加root用户密码1sudo passwd root
-2 设置root用户可ssh登录1vi /etc/ssh/sshd_config
+        数据导出PostgreSql在windows安装路径/bin目录下自带Pg_dump.exe执行程序
+执行过程：
 
-找到1PermitRootLogin without-password
+打开windows下的命令窗口：开始-&gt;cmd-&gt;安装数据库的目录-&gt;进入bin目录；
 
-
-/- 改为1PermitRootLogin yes
-
-重启ssh1service ssh restart
+导出命令：
+1pg_dump –h localhost –U db_username –p 5432 –d db_name –f “D:/test.dmp”
 
 
-
+参数列表...
     
 
-        <a href="/2018/09/05/ubuntu设置root密码，可ssh登录/" class="post-more waves-effect waves-button">
+        <a href="/2018/09/05/postsql数据的导入和导出/" class="post-more waves-effect waves-button">
             阅读全文…
         </a>
     </div>
     
     <div class="post-footer">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据库/">数据库</a></li></ul>
 
     </div>
     
