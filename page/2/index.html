@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
     <script>window.lazyScripts=[]</script>
     <script data-ad-client="ca-pub-5981603616981675" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
     <!-- custom head -->
     
 
@@ -157,6 +158,55 @@
 <div class="container body-wrap">
 
     <ul class="post-list">
+    
+        <li class="post-list-item fade">
+            <article id="post-ubuntu16搭建本地apt源"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2019-10-24 11:33:58" datetime="2019-10-24T03:33:58.626Z"  itemprop="datePublished">2019-10-24</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/ubuntu/">ubuntu</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/ubuntu/apt/">apt</a></li></ul></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2019/10/24/ubuntu16搭建本地apt源/">ubuntu16搭建本地apt源</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        本文服务器环境Ubuntu 16.04.3 LTS,因为一些特殊业务原因，有些服务器需不能上外网，服务器安装一些软件包特别麻烦，需要下载软件的deb和软件依赖的deb包，有时下载不全deb包，安装软件就会失败，所以需要在内网环境搭建一个apt源，这样就可以使用apt自动解决一些软件包的依赖。
+安装apt-mirror1apt-get install apt-mirror
+配置mirror.l...
+    
+
+        <a href="/2019/10/24/ubuntu16搭建本地apt源/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/apt/">apt</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ubuntu/">ubuntu</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
     
         <li class="post-list-item fade">
             <article id="post-立flag"
@@ -614,54 +664,6 @@ Press enter for maintenance
     <div class="post-footer">
         
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/postgresql/">postgresql</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ubuntu/">ubuntu</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据库/">数据库</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-gitignore规则不生效"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2018-09-21 16:35:17" datetime="2018-09-21T08:35:17.000Z"  itemprop="datePublished">2018-09-21</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2018/09/21/gitignore规则不生效/">.gitignore规则不生效</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的。
-解决方法就是先把本地缓存删除（改变成未track状态），然后再提交:
-1git rm -r --cached .
-
-    
-
-        <a href="/2018/09/21/gitignore规则不生效/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
 
     </div>
     

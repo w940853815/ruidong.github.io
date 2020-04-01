@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w940853815.github.io/"/>
-  <updated>2020-03-23T04:36:15.991Z</updated>
+  <updated>2020-04-01T10:02:33.131Z</updated>
   <id>https://w940853815.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>本地磁盘，外接网络存储问题</title>
+    <link href="https://w940853815.github.io/2020/04/01/%E6%9C%AC%E5%9C%B0%E7%A3%81%E7%9B%98%EF%BC%8C%E5%A4%96%E6%8E%A5%E7%BD%91%E7%BB%9C%E5%AD%98%E5%82%A8%E9%97%AE%E9%A2%98/"/>
+    <id>https://w940853815.github.io/2020/04/01/本地磁盘，外接网络存储问题/</id>
+    <published>2020-04-01T09:44:19.656Z</published>
+    <updated>2020-04-01T10:02:33.131Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本文服务器均为ubtuntu16&lt;/p&gt;
+&lt;h2 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="存储" scheme="https://w940853815.github.io/categories/%E5%AD%98%E5%82%A8/"/>
+    
+      <category term="ubuntu" scheme="https://w940853815.github.io/categories/%E5%AD%98%E5%82%A8/ubuntu/"/>
+    
+    
+      <category term="ubuntu" scheme="https://w940853815.github.io/tags/ubuntu/"/>
+    
+      <category term="存储" scheme="https://w940853815.github.io/tags/%E5%AD%98%E5%82%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>ros设置定时ping任务</title>
@@ -83,7 +114,7 @@
     <link href="https://w940853815.github.io/2020/01/16/ubuntu%E5%8F%8C%E7%BD%91%E5%8D%A1%E9%85%8D%E7%BD%AE/"/>
     <id>https://w940853815.github.io/2020/01/16/ubuntu双网卡配置/</id>
     <published>2020-01-16T07:42:02.712Z</published>
-    <updated>2020-01-16T08:08:44.492Z</updated>
+    <updated>2020-04-01T10:03:40.547Z</updated>
     
     <summary type="html">
     
@@ -99,10 +130,14 @@
     
     </summary>
     
-      <category term="network - ubuntu" scheme="https://w940853815.github.io/categories/network-ubuntu/"/>
+      <category term="network" scheme="https://w940853815.github.io/categories/network/"/>
+    
+      <category term="ubuntu" scheme="https://w940853815.github.io/categories/network/ubuntu/"/>
     
     
-      <category term="network - ubuntu" scheme="https://w940853815.github.io/tags/network-ubuntu/"/>
+      <category term="ubuntu" scheme="https://w940853815.github.io/tags/ubuntu/"/>
+    
+      <category term="network" scheme="https://w940853815.github.io/tags/network/"/>
     
   </entry>
   
@@ -573,32 +608,6 @@
       <category term="数据库" scheme="https://w940853815.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
       <category term="ubuntu" scheme="https://w940853815.github.io/tags/ubuntu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>.gitignore规则不生效</title>
-    <link href="https://w940853815.github.io/2018/09/21/gitignore%E8%A7%84%E5%88%99%E4%B8%8D%E7%94%9F%E6%95%88/"/>
-    <id>https://w940853815.github.io/2018/09/21/gitignore规则不生效/</id>
-    <published>2018-09-21T08:35:17.000Z</published>
-    <updated>2018-09-21T08:37:09.541Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的。&lt;/p&gt;
-&lt;p&gt;解决方法就是先把本地缓存删除（改变成未track状态），然后再提交:&lt;/p&gt;
-&lt;figure class=&quot;highlight
-        
-      
-    
-    </summary>
-    
-    
-      <category term="git" scheme="https://w940853815.github.io/tags/git/"/>
     
   </entry>
   
