@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w940853815.github.io/"/>
-  <updated>2020-04-04T05:12:57.527Z</updated>
+  <updated>2020-04-08T11:05:41.902Z</updated>
   <id>https://w940853815.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nginx匹配多个url配置</title>
+    <link href="https://w940853815.github.io/2020/04/08/nginx%E5%8C%B9%E9%85%8D%E5%A4%9A%E4%B8%AAurl%E9%85%8D%E7%BD%AE/"/>
+    <id>https://w940853815.github.io/2020/04/08/nginx匹配多个url配置/</id>
+    <published>2020-04-08T10:51:45.394Z</published>
+    <updated>2020-04-08T11:05:41.902Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;需求场景&quot;&gt;&lt;a href=&quot;#需求场景&quot; class=&quot;headerlink&quot; title=&quot;需求场景&quot;&gt;&lt;/a&gt;需求场景&lt;/h1&gt;&lt;p&gt;nignx转发的服务想要开启basic auth认证，后端某些不需要认证的页面不太想被人访问，所以先要通过basic
+        
+      
+    
+    </summary>
+    
+      <category term="nginx" scheme="https://w940853815.github.io/categories/nginx/"/>
+    
+    
+      <category term="nginx" scheme="https://w940853815.github.io/tags/nginx/"/>
+    
+  </entry>
   
   <entry>
     <title>html定时切换图片代码</title>
@@ -583,30 +609,6 @@
       <category term="flask" scheme="https://w940853815.github.io/tags/flask/"/>
     
       <category term="flask-restful" scheme="https://w940853815.github.io/tags/flask-restful/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>boot failed nfs,welcome to emergency mode</title>
-    <link href="https://w940853815.github.io/2019/06/20/nfs_boot_faild/"/>
-    <id>https://w940853815.github.io/2019/06/20/nfs_boot_faild/</id>
-    <published>2019-06-20T07:55:12.000Z</published>
-    <updated>2019-06-20T07:49:52.813Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;问题：机房服务器断电进行消防检查，检查完后服务器远程登录不了&quot;&gt;&lt;a href=&quot;#问题：机房服务器断电进行消防检查，检查完后服务器远程登录不了&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ubuntu" scheme="https://w940853815.github.io/tags/ubuntu/"/>
     
   </entry>
   
