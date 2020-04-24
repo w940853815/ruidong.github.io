@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w940853815.github.io/"/>
-  <updated>2020-04-08T11:05:41.902Z</updated>
+  <updated>2020-04-24T02:33:07.433Z</updated>
   <id>https://w940853815.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ubuntu查看磁盘raid信息</title>
+    <link href="https://w940853815.github.io/2020/04/24/ubuntu%E6%9F%A5%E7%9C%8B%E7%A3%81%E7%9B%98raid%E4%BF%A1%E6%81%AF/"/>
+    <id>https://w940853815.github.io/2020/04/24/ubuntu查看磁盘raid信息/</id>
+    <published>2020-04-24T02:18:23.664Z</published>
+    <updated>2020-04-24T02:33:07.433Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本文主要介绍的是使用硬件作的磁盘raid，如何查看磁盘raid信息，服务器使用的是dell服务器，系统是ubuntu16&lt;/p&gt;
+&lt;h1 id=&quot;查看服务器硬盘信息&quot;&gt;&lt;a href=&quot;#查看服务器硬盘信息&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="raid" scheme="https://w940853815.github.io/categories/raid/"/>
+    
+      <category term="ubuntu" scheme="https://w940853815.github.io/categories/raid/ubuntu/"/>
+    
+    
+      <category term="ubuntu" scheme="https://w940853815.github.io/tags/ubuntu/"/>
+    
+      <category term="raid" scheme="https://w940853815.github.io/tags/raid/"/>
+    
+  </entry>
   
   <entry>
     <title>nginx匹配多个url配置</title>
@@ -221,9 +252,9 @@
       <category term="Nginx" scheme="https://w940853815.github.io/categories/docker-compose/flask/Nginx/"/>
     
     
-      <category term="docker-compose" scheme="https://w940853815.github.io/tags/docker-compose/"/>
-    
       <category term="flask" scheme="https://w940853815.github.io/tags/flask/"/>
+    
+      <category term="docker-compose" scheme="https://w940853815.github.io/tags/docker-compose/"/>
     
       <category term="Nginx" scheme="https://w940853815.github.io/tags/Nginx/"/>
     
@@ -580,35 +611,6 @@
     
     
       <category term="读书笔记" scheme="https://w940853815.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>flask_restfule接收多个文件</title>
-    <link href="https://w940853815.github.io/2019/08/21/flask_restful%E5%90%8C%E6%97%B6%E6%8E%A5%E6%94%B6%E5%A4%9A%E4%B8%AA%E6%96%87%E4%BB%B6/"/>
-    <id>https://w940853815.github.io/2019/08/21/flask_restful同时接收多个文件/</id>
-    <published>2019-08-21T03:28:36.000Z</published>
-    <updated>2019-08-21T03:29:02.984Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;添加action=’append’即可接受多个文件&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://w940853815.github.io/tags/python/"/>
-    
-      <category term="flask" scheme="https://w940853815.github.io/tags/flask/"/>
-    
-      <category term="flask-restful" scheme="https://w940853815.github.io/tags/flask-restful/"/>
     
   </entry>
   
